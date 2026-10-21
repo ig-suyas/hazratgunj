@@ -46,4 +46,3 @@ next-env.d.ts
 # local-only files
 *.local
 *.log
-.claude/settings.local.json

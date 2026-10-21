@@ -1,0 +1,534 @@
+{
+  "hot-and-sour-veg": {
+    "src": "/dishes/hot-and-sour-veg",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoMAA8AA4BaJagCdH8AGZU5s5rPRSwA/u1toiquBL0PTP4rhVwhJ6o5uEhYU+1GJecct8rnFCVt3H8tWrKK/lSEmmd1BGorupAZkUM78tRkKIAA",
+    "source": "unsplash"
+  },
+  "cream-of-tomato": {
+    "src": "/dishes/cream-of-tomato",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoMAA8AA4BaJbACdAECwgQKGCqbxgAA/vS0ID+0CNXeY4zVpJ0KChuHFWY5x02PJQnuQpCWydq3qy4XK9vxU6dBjbxLKN4sNVsNCmtti8AAAA==",
+    "source": "unsplash"
+  },
+  "cream-of-mushroom": {
+    "src": "/dishes/cream-of-mushroom",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoMAA8AA4BaJYgCdAEfkXBM0VVmAAD45U4jCg3uKTTaLYEA4r9G6mGqHgIz8DEmYu8iZihmLT37IDe8NPISNrDRfLfx1XCkAAA=",
+    "source": "unsplash"
+  },
+  "paneer-tikka": {
+    "src": "/dishes/paneer-tikka",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoMAA8AA4BaJbACdAEOz9PZkggA/u4l31ZNLT2qwbVhJvlvHqHh2Cnupgs2yTPp9r1CGug5Zu+ZbTgz/7158k5+kugToBuv/De/5rnQZMIfVfAAAAA=",
+    "source": "unsplash"
+  },
+  "hara-bhara-kebab": {
+    "src": "/dishes/hara-bhara-kebab",
+    "width": 719,
+    "height": 899,
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAwAgCdASoMAA8AA4BaJbACdLoAAhrgIdc6YAD52RPhIcdWMZZN95T/QcB8FMgt0rCWfQ+L+Rvj3OudV7E3iDF1jykgAA==",
+    "source": "google"
+  },
+  "cheesy-murg-seekh-kebab": {
+    "src": "/dishes/cheesy-murg-seekh-kebab",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQAgCdASoMAA8AA4BaJbACdAEUgLcfQKwAAP7doWCxuZAVok5LNXP2pIdO6LRWwxIRHX26yTdd4HK//Xj+3AhhVl/jB9v8DxNxM/w5wGzWkaUR/b1MLR+3U95FHuYmO9P55JuGIIAAAA==",
+    "source": "unsplash"
+  },
+  "mutton-galawat": {
+    "src": "/dishes/mutton-galawat",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoMAA8AA4BaJbACdAEfkculbHNSgAD7zd8Kqq9/1A9CWEC3/woY5rRiwyiZLCoySeQWiK/6PAjSzxf+sM3nMjBzO8AmlhCRG1bbHyd/wSwBk5qIqSA/gZOqAAA=",
+    "source": "unsplash"
+  },
+  "tandoori-jhinga": {
+    "src": "/dishes/tandoori-jhinga",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoMAA8AA4BaJbACdLoAAnbe4qLoOAAA+LVWxprJxrvf3AGZyeiV2aXoloI3NKqF+U1tyqCBq9ZyHE5BiPj/6YFrWPiZ29Sw2+P68bQ01ggjAAAA",
+    "source": "unsplash"
+  },
+  "bhatti-da-murg": {
+    "src": "/dishes/bhatti-da-murg",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAQCdASoMAA8AA4BaJbACdADbAV7wAPzlgS24JtCU/0JiQ8YGd0iKDBDIJVT2SuZvgcVh7JlQxQXpRGMI+KWWBb3/+Km8Sp9JdOmVurKefm9q/9InVTP7PaqO9vdZCAAAAA==",
+    "source": "unsplash"
+  },
+  "three-paper-chillis-veg": {
+    "src": "/dishes/three-paper-chillis-veg",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAQCdASoMAA8AA4BaJbACdADbYpk9AAD9vecKc0Dm+LVwqwKOxuXpsuI3uI5EBavc14y7xEqpq+58XvL2XvROZex9u6svpbn/ngPIzhjrqy863/wy4AkAAAA=",
+    "source": "google"
+  },
+  "veg-momos": {
+    "src": "/dishes/veg-momos",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoMAA8AA4BaJbACdAEfUrtpuNv5AAD+zyFJXaqEteSTV3JP56NpIFPCujVcMb3QTFxw5gy4sGIJa3AZMBVH/g/N94z4CBzeS+eK3IcKoJHK/4AA",
+    "source": "unsplash"
+  },
+  "mighty-manchurian": {
+    "src": "/dishes/mighty-manchurian",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoMAA8AA4BaJbACdAEUTLgk741AAPzy8/7N+hX114hzr3ITpt6XCTx18joYQNAIKxGNoAIpFU8ShI5klaqGpwspqhnPYe8zcFFMdkfnDBXphvjWwy1p6twoAAA=",
+    "source": "unsplash"
+  },
+  "royale-rolls-veg": {
+    "src": "/dishes/royale-rolls-veg",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoMAA8AA4BaJbACdH8AGERu5IA4gAD+8BOcqk04XKhjOUv36bq1sMdpu43urueaHbD2NQ1HX1Ma4syBMQ8b/MT7v0dIcZeqx7Y3F5HQE4iczAAA",
+    "source": "unsplash"
+  },
+  "wok-tossed-potatoes": {
+    "src": "/dishes/wok-tossed-potatoes",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwAgCdASoMAA8AA4BaJbACdLoAAuQNhI8HxAnE2AAA/rAiMfmQ7r9w28wmotxrhcmvQDYb/GGyO16f25k/WJ7pHoDHyyeGHdva7fM/CoPQLzgsy7vNbQW/v5PI0Ck7AAA=",
+    "source": "google"
+  },
+  "prawns-chillys": {
+    "src": "/dishes/prawns-chillys",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAQCdASoMAA8AA4BaJbACdADaNsusgAD+55tQ9ZUWcPohctZwQzxTi6zJezOgz8Y775E0YwLtV4N/vh2IcTndTTe06mxFC/2Wz3xJm9ae0b+EeI94ZJrePPFqKhMhnwAAAA==",
+    "source": "unsplash"
+  },
+  "lollipop": {
+    "src": "/dishes/lollipop",
+    "width": 853,
+    "height": 1066,
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoMAA8AA4BaJbACdAEDeHMVIkMQAPYGI3ZpbS9B0RsIxn+EcKVImviYWNItpGtwuXVWUFCAAopZiAi8AAA=",
+    "source": "unsplash"
+  },
+  "drums-of-heaven": {
+    "src": "/dishes/drums-of-heaven",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoMAA8AA4BaJbACdADcwiN0hAAA/uo5Z+U/h55XyGIYD3EZTlHpFGdEfGOYxd1vubo/p5h/SwY7scT79T0+w/l+bp+lBT9FugST7IiJmPnMf7LofAESvwqeGkAAAA==",
+    "source": "google"
+  },
+  "three-paper-chillis-chicken": {
+    "src": "/dishes/three-paper-chillis-chicken",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQAgCdASoMAA8AA4BaJbACdLoAAzhM2oJeBAwMAAD9UBSN0SNTiEJq+3tCyhB7vxrP3IFs7jeR/ZWncGDVBs9o7I6YQb33BDkkpDi4vPb9+SrNtEPOzxMJ/gj4wg191p7afzmguIkwAAAA",
+    "source": "unsplash"
+  },
+  "non-veg-momos": {
+    "src": "/dishes/non-veg-momos",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAQCdASoMAA8AA4BaJbACdAENeYfjDzAAzhCQPFPS6Ceq5oYQt0nAAuZLacmZZZt+6vRQUktmtSKoINrNlrK4Nv0N8uyoQusWXdT8m/Ri+5P0VPblLsW8Ey+1kAAA",
+    "source": "unsplash"
+  },
+  "royale-rolls-chicken": {
+    "src": "/dishes/royale-rolls-chicken",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoMAA8AA4BaJbACdADhG2O54AAA+g/5f/vz4vzHZzf88hkaykllylpx9jwcrLFHV8jjwMCD+CMhUuldb47jGF7VnBaU67UsYG8l3w9CWvQ1IAAA",
+    "source": "unsplash"
+  },
+  "cheese-cigar-rolls": {
+    "src": "/dishes/cheese-cigar-rolls",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoMAA8AA4BaJbACdADZobnkRQAA4ehBkBy0Uk5x9zY52+pxbIYkJyWPZIsv49nz0auTAXCWqVmbccrX7G/XEvXBs3bTvHV7bhDBz4lBuAQUAA==",
+    "source": "google"
+  },
+  "classic-bruschetta": {
+    "src": "/dishes/classic-bruschetta",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoMAA8AA4BaJbACdAELKSq/juGoAP7c/9QmsrH5qVO3DkfkkD7E5aXzWgE82VHmUxbpTcX/DwyPn+vKY2gowlBAxKyzzQiYRR2oeXKpfIPPUxWU/yAAAA==",
+    "source": "unsplash"
+  },
+  "cheese-ball-sticks": {
+    "src": "/dishes/cheese-ball-sticks",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAwAgCdASoMAA8AA4BaJbACdLoAAx+owMww4AD+mqi/fMvi15wgjfP/4WoZwdHRQ9VBoSVeZ+fiXTMSLDFrrM58gI3cZw2CXS4o54M0uD83m/sS8+bgvaTKOQ9Y2KqcqPJCKRgqMcysjFAKOCqQAA==",
+    "source": "unsplash"
+  },
+  "chicken-teriyaki": {
+    "src": "/dishes/chicken-teriyaki",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoMAA8AA4BaJbACdADdjhFxj+JoAAD+tA59Dwhv8SsAKuExIV74T8Lom9gq3MtzhBD1UVpxJoLjEHenw5oeaWolDCBV/0WH3KAbMNRuJoTzOIqfnx+THMWtcAA=",
+    "source": "unsplash"
+  },
+  "peri-peri-fish-finger": {
+    "src": "/dishes/peri-peri-fish-finger",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoMAA8AA4BaJbACdADdKc2teVFOAAD+YK7jsxUJH+CmKcyXJmC583Uf5r/ib247A91diIRgp5xhaq8Y9fsP3gLkC9ipsD5t4BHr7I2zYAAKnVAA",
+    "source": "unsplash"
+  },
+  "caesar-salad": {
+    "src": "/dishes/caesar-salad",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoMAA8AA4BaJbACdAELfdnNMiAAAP7oe3UHIduuFrVKHgpuys6XAoag5rmIVXkRkIzerMbkwp9rTSuPi1o5SOE8wYIhTN0Lk7s4kZmmr/R0tQMq43oAAA==",
+    "source": "unsplash"
+  },
+  "tandoori-paneer-tikka-masala": {
+    "src": "/dishes/tandoori-paneer-tikka-masala",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoMAA8AA4BaJbACdAEDlY0fkAAA/tJeEZY0PQbGLps5RoD9TjJh7WpY4KF1O0rfvVkvS8XhjdFyarZM3fPzN/jna/xnXHAwFlz4zH3Zugc/QFdy8j/m6GcTAAA=",
+    "source": "unsplash"
+  },
+  "signature-paneer-makkhan-wala": {
+    "src": "/dishes/signature-paneer-makkhan-wala",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoMAA8AA4BaJbACdAEOQZjQP4AA/p+5b5VQA5W0xT8MNtobMbk/HvQ0nVybaV1QrhvHiY7sVx9xhEnrbJ+v9yUCkMXmiFRev+3nMaefykXJ8AAA",
+    "source": "unsplash"
+  },
+  "signature-paneer-makkhan-masala": {
+    "src": "/dishes/signature-paneer-makkhan-masala",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoMAA8AA4BaJbACdADZPq7wAPlseKmIZugBo5OaAdGVmG0kXvRm0jbhGl7KzMUHh6tv4x4Vmkr1d8SbJPxcntR+NjviQYqqb99fioAA",
+    "source": "unsplash"
+  },
+  "malai-kofta": {
+    "src": "/dishes/malai-kofta",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoMAA8AA4BaJbACdAEQXKWFMtzAAN4qx05hnfoO8DgneFM/L6asmjzGuZ6pJx9Ej/EQma/oC+8FRfuMRbXz0Ik7aze8zEfYQUSxefgodM6+XrlDIAZJkehiAAA=",
+    "source": "unsplash"
+  },
+  "aloo-gobhi-adrak-wali": {
+    "src": "/dishes/aloo-gobhi-adrak-wali",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoMAA8AA4BaJbACdLoAAnfKRk/QAP58quJxtZOLDwhm6YnIW9QkVVrABNr3ZLpP0gVtu3iNJ/TJai+ZgUMBBfj8mNFbGXd1AAA=",
+    "source": "unsplash"
+  },
+  "aloo-dum-banarsi": {
+    "src": "/dishes/aloo-dum-banarsi",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoMAA8AA4BaJbACdLoAAmsrHHSAAP66ZNCbFSTAceIVJ2HMAJjqnSs/JPhybDvLY1MiFvkgo9Sl6e3ILDVq329s1BRVtsSDhTmDIsJsYcAAAA==",
+    "source": "unsplash"
+  },
+  "paneer-lababdaar": {
+    "src": "/dishes/paneer-lababdaar",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAgCdASoMAA8AA4BaJbACdLoAAnS4BkKyzwAAAP54w2tk5XdKcN1ta8u26rftttffgyJxJ7H45ZX+kl7QfXJsysVT/XBTdwe7NssxReGqP5O6w3Wb6tOzAAA=",
+    "source": "google"
+  },
+  "subz-mili-juli": {
+    "src": "/dishes/subz-mili-juli",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABQAgCdASoMAA8AA4BaJbACdEf/geeENiM4R5QA/XbY+GZPraoLwIEJ6ZvV6/K0Im50uDiKoqbGh6+l4zcrWH51+xjUeQ3I8fMeyIgBmv9LIAAA",
+    "source": "unsplash"
+  },
+  "subz-handi": {
+    "src": "/dishes/subz-handi",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoMAA8AA4BaJbACdEf/gYxjSe8AAPwOAA23GQp8Hx4XHad8hzsDQtPj4NrxkUMXQ+rUnr62XToRYNhFYpTYlXhwiuqNDt3fhwv0f90HITsoPn+chtShy0e0HBi0QKwAAAA=",
+    "source": "unsplash"
+  },
+  "murg-ghee-roast": {
+    "src": "/dishes/murg-ghee-roast",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoMAA8AA4BaJbACdADZi8e4YAD+QMQ8gzSTpQmmPL8UbXZtmTICh2H6BUh2tQcXaj1U0jtjL6WN/GpO1WLOokceddDbPb3oAAA=",
+    "source": "unsplash"
+  },
+  "signature-murg-makkhan-wala": {
+    "src": "/dishes/signature-murg-makkhan-wala",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQAgCdASoMAA8AA4BaJbACdLoAAznjXLBHEgAA98QLcVJBu70omutJbMwocJA3nvHaqK/qHkklmQ3JCSWVkQhp4E/Y3L//bZUZ4IdEJ+8OfjRr/6DxGpAA",
+    "source": "unsplash"
+  },
+  "signature-murg-makkhan-masala": {
+    "src": "/dishes/signature-murg-makkhan-masala",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoMAA8AA4BaJbACdLoAArnQYNE/aQAA/LTPEHUcKrYDPrA8dqYafnY4lCJd2FdpYSDw/hvDQocjNmBQacKR9j8yM2vz6XmfAzgbNCEOf7xcDHBhAAA=",
+    "source": "unsplash"
+  },
+  "signature-hazratgunj-masaledaar-gosht": {
+    "src": "/dishes/signature-hazratgunj-masaledaar-gosht",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoMAA8AA4BaJbACdAEev68pjBeruAD7+/a+oMiy2O6w4SRphZej+byc1yj+cXsrDoOl6010PrT32kSSswDK6rRwJRbpT7peVmIFxVkEVKxawOIpldQLwAAA",
+    "source": "unsplash"
+  },
+  "khade-masale-ka-bhuna-gosht": {
+    "src": "/dishes/khade-masale-ka-bhuna-gosht",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoMAA8AA4BaJbACdAEfUlwMbQd/4AD9xqMDGSlko8PC3faMsCjGx91xX3mO5rG6EYyaml4xEHh4uU/HOwzlGX8B3SIz9Ksby86HRrpklOeHuwiAAAA=",
+    "source": "unsplash"
+  },
+  "gosht-rogan-josh": {
+    "src": "/dishes/gosht-rogan-josh",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoMAA8AA4BaJbACdADhmj/HqA+ogAD+aMNc0/Zo2AF83CzXXHXL2CdDA7VMGstor/bNJnetXdjwmepizz9B92quhd7t88PVHekegAAA",
+    "source": "unsplash"
+  },
+  "khade-masale-ke-murg": {
+    "src": "/dishes/khade-masale-ke-murg",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoMAA8AA4BaJbACdAELXFKdX4YAAPKnmC0g1U0++afYyJQQ00Z0D/efFJWkJ7OEvUeyxWtKB2j34EAQBoRPsrQ5n2VsORLa5dpUZqG1/lAAAA==",
+    "source": "unsplash"
+  },
+  "dhaabe-da-kukkad": {
+    "src": "/dishes/dhaabe-da-kukkad",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoMAA8AA4BaJbACdLoAAnKbdSqAQAD945vIYgE8NluVk0kq+7KgnO+khpZDh3J9UchjGKkvCXgHwKL9MlhtZ4jfjIyDRuCUAAA=",
+    "source": "unsplash"
+  },
+  "dal-fry": {
+    "src": "/dishes/dal-fry",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoMAA8AA4BaJbACdEf/gY9UFN2zAAD+0P+iRcm1JUyIDXL7XkF0DuRCDSQlfDZ0kK1luZ3Wvj2/1fViZM5F4FKqOS428ZHmgb4E7Do/ZVG8lMs4Ypfb5+tSQAA=",
+    "source": "unsplash"
+  },
+  "tadke-waali-dal": {
+    "src": "/dishes/tadke-waali-dal",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABwAgCdASoMAA8AA4BaJbACdDiMwUoyMRbmDLAAAP7oZ0XxxAbjinQlx7cy7thhefdiP22CKY+z5ytyIsiOlGHEyfpo1MvEZn7NfaNUR+d8ZVew19tWJEuPk4AAAA==",
+    "source": "unsplash"
+  },
+  "dal-makkhan-wali": {
+    "src": "/dishes/dal-makkhan-wali",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoMAA8AA4BaJbACdADdCqECEAD+9F3k/vFy50CYUVh+Cazy0/6mlz3PwTp1qrJz8w9zUtnk2DuiEP59xU9eVe3a/UYm9UajtLyoYZFwAAA=",
+    "source": "unsplash"
+  },
+  "basmati-e-khaas": {
+    "src": "/dishes/basmati-e-khaas",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoMAA8AA4BaJaACdAEPDHz2aegAAP5J/xbz3+Ho4RmZcsEeqBB7Gm3a5bucYRNJn/dtpB4aWbpEqN1fKS3Ivy+DiJH7B4iUzowpmSSiY7C6DUuAAAA=",
+    "source": "unsplash"
+  },
+  "pulao-please": {
+    "src": "/dishes/pulao-please",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwAgCdASoMAA8AA4BaJbACdAEQzWSezVTSsAD+6GqQD+DHye3ZI7YbUoeQs1dr/0jBPWUAN/Sg2oyeirTaCGe+1/y5UKzDus+lk81HKCN6x35ymtxPGXUgAAA=",
+    "source": "unsplash"
+  },
+  "hazratgunj-subz-biryani": {
+    "src": "/dishes/hazratgunj-subz-biryani",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQAgCdASoMAA8AA4BaJbACdLoAAuZtptjg/rgA/tviamOWPthdIrD5R2auwk3Af5eHCNzYtGA2Iry8mgENN6Xe4yadfijOKHYckG4/kguzaI/CIM+W7a7IFnyXecddm7cjAAAA",
+    "source": "google"
+  },
+  "hazratgunj-murg-dum-biryani": {
+    "src": "/dishes/hazratgunj-murg-dum-biryani",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoMAA8AA4BaJZgCdAD+HI/75MAA+nGdTfIFWUFgBggHA9h2kbgnoWuV/a4wH5bQtQZhygMai1d5k/LX22CdGOb0+Xy4UQtR8XYugAAA",
+    "source": "unsplash"
+  },
+  "choice-of-roti": {
+    "src": "/dishes/choice-of-roti",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABQAgCdASoMAA8AA4BaJbACdLoAArnjfRF/oQAA/k3jRVQaVTOOg2TlvhI5t6O62Rmy5HBSplxkMpERKNq6eGOtIGp+aHRhdvbEV2uBF26CAAAA",
+    "source": "google"
+  },
+  "naan-naan": {
+    "src": "/dishes/naan-naan",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoMAA8AA4BaJbACdACR1qq0rAAA/vH98gEean8vfCuVBpFwcV5gH6xTvCC7psy3FoKcOma9/fRawweFnztT7XoJ5WDT3ZZcQSEOurLDg6AAAA==",
+    "source": "google"
+  },
+  "kulche": {
+    "src": "/dishes/kulche",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoMAA8AA4BaJbACdADZk/7HJwAA/qoLPTeYQ55zN3LBYlTk3ZtHspMz1ZicRW9XcbPCeYVEec8cWUgV/6OkP82sxpC23Kr9X0ub3kEHpQAAAA==",
+    "source": "google"
+  },
+  "parathe": {
+    "src": "/dishes/parathe",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAQCdASoMAA8AA4BaJagCdADYcwAA4BrR7rm6kHTbLN0ViIDgePEu8dMC84Dz6QJRG0j2szzrgEZ/ZJsgb4xeaF+R7NrC+9JDAAAA",
+    "source": "unsplash"
+  },
+  "hazratgunj-bread-basket": {
+    "src": "/dishes/hazratgunj-bread-basket",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAgCdASoMAA8AA4BaJbACdAELMq6tI1x+jYAA/qMukKd/3TCnUPqAeBtry3HjQoW0HPI7+EcbgT21QH1kPUrLMPqzFcoF+1oXdQR/05eK0MY/oXy2ekDAAAA=",
+    "source": "unsplash"
+  },
+  "fried-rice": {
+    "src": "/dishes/fried-rice",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoMAA8AA4BaJbACdAEfvo8Q7lgAAP6scj+2/Hu3zGNyjBJXvPuK8Sit+1vrQGCaEq6cZViGgBTDepEME5ogUTCUr9/KHa7o2mgN3hbwYb3ZPLkTeZQAAA==",
+    "source": "unsplash"
+  },
+  "hakka-noodles": {
+    "src": "/dishes/hakka-noodles",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoMAA8AA4BaJZgCdAEO/9OhBS78AAD+9hRezxO/3qMUDVRZU/eSEiNAhPnDLTl+giuXAliSfMYifOiYSnkMoAD8BNxKTGBroAA=",
+    "source": "unsplash"
+  },
+  "schezwan-noodles": {
+    "src": "/dishes/schezwan-noodles",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACQAgCdASoMAA8AA4BaJbACdLoAAw6F3lRbvErlAAD+a08T/JF0zTrP5Og18w3MLffVLJ8Du1afmUjDDsbL31BEppx+a8/Y92s+r88XrxhORy4GVcpdOFKLA0AAAA==",
+    "source": "unsplash"
+  },
+  "chilly-garlic-noodles": {
+    "src": "/dishes/chilly-garlic-noodles",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoMAA8AA4BaJbACdAEXaX8FqF9kAAD+anoTvjusfXeX9kv5gI11/OlTCoMdswl1iWXhUytJvc8WzhMvPYjiVEPbR2DSCe0SYAA=",
+    "source": "unsplash"
+  },
+  "craft-your-own-pasta": {
+    "src": "/dishes/craft-your-own-pasta",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoMAA8AA4BaJbACdAD2OmKpoSAA/vS08CnPNC0gXxijvJh2WuOqOjVqIwR8anfKRBnI1JRsf1lWPpHYvV2kF/JXb9oslUsmW51Zb81GKXTjZgAA",
+    "source": "unsplash"
+  },
+  "veg-pizza": {
+    "src": "/dishes/veg-pizza",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAQCdASoMAA8AA4BaJbACdAD0ZyF/YAAA+FtUnScUajbpXUgvtFm8kiuCpWj5Q0KKi6DJv5dL0jgUQmPkXymYjRXiwS4v6Kl1RzPUG3sbYf1kNXEW+Ag/EDSU6u54qBEAAA==",
+    "source": "unsplash"
+  },
+  "sandwich": {
+    "src": "/dishes/sandwich",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoMAA8AA4BaJbACdADhbpJaID7rgAD+813TNbJj59sWftNk5Nybb78z9Haoes2zlX+kRTLBq7junq+YsY1JoL6zpzSf0tZmgu+83yo/EyRYBXiTvHOqfNAA",
+    "source": "unsplash"
+  },
+  "french-fries": {
+    "src": "/dishes/french-fries",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoMAA8AA4BaJbACdADdkL9wz9IAAP7zw1HXnHfdsH+JpRLVfPoIbSw2p27cXPC2O/IKiL2FmoHRZ33jAQ9rrcOw5DYY92Ua6svOUuI+4AA=",
+    "source": "unsplash"
+  },
+  "peri-peri-fries": {
+    "src": "/dishes/peri-peri-fries",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAQCdASoMAA8AA4BaJbACdAEPCq5MAAD+8aYLGiHuP0+tJ/r+iBOQD6dnnsHXt0B+M4OcKS1+LT8aaNrw5zv+RZt99AzYk75uPuZfv/e6uC9sIL+RskzW+QzHwXz3eGI6wlcUAAA=",
+    "source": "unsplash"
+  },
+  "gulaab-jaamun-with-rabri": {
+    "src": "/dishes/gulaab-jaamun-with-rabri",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoMAA8AA4BaJbACdADdL2qY4ecs8AD+vbBBY9PszoAuMmiVzKz2O0C+JqiNFFb6uhyJLq+d7970E2YGQOEqZ9d9oSm6+6MVs3YFtoB0q44KgE03GUVrAAAA",
+    "source": "google"
+  },
+  "gajar-da-halwa": {
+    "src": "/dishes/gajar-da-halwa",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoMAA8AA4BaJagCdADcog5HZpgAAP5Xcx20XivA1WFR8V7DHNOCFdWrAkPvV8fHGKiDYmMdyB2+KMQgm47rARq4Ah79gD0/hQ28v6qxvV04kOYHDhiAPGo0W/1w0nagAAA=",
+    "source": "unsplash"
+  },
+  "sizzling-brownie-with-ice-cream": {
+    "src": "/dishes/sizzling-brownie-with-ice-cream",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoMAA8AA4BaJQBOgCPqerBhVvQA/u2ztupmmcEE0eMV84WdgPefUc8y2Lc+PrZ39rt38FMmb08rRvkhS8Eu1upnJoj+c4BFOrkAAA==",
+    "source": "unsplash"
+  },
+  "signature-shahi-tukda": {
+    "src": "/dishes/signature-shahi-tukda",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoMAA8AA4BaJbACdAELZIJq476nQAD+72GsTJ6ZbUTMYpyZXS9uFFpB92cyN+ei9kz63KGF7L62jqkmVpgI0rRc+ts6CLp4VAJrwJn7DwAAAA==",
+    "source": "google"
+  },
+  "bartenders-special": {
+    "src": "/dishes/bartenders-special",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoMAA8AA4BaJbACdADc5dgwAP73EXDZbXV99WIZfW5AP2/8jfgRAyFiKWOt9qnavwFr83miEY/biEl6TKAAAA==",
+    "source": "unsplash"
+  },
+  "lemonade": {
+    "src": "/dishes/lemonade",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoMAA8AA4BaJbAC7AELXzaGI0QA/uzfLoiuhdSvUHP83PT4ngZfbfNvrSVgorpxJxmUebkC5FRTfdXRMvLB/vAs74CdyNnp86s9B9N+WJgAAA==",
+    "source": "unsplash"
+  },
+  "virgin-mojito": {
+    "src": "/dishes/virgin-mojito",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoMAA8AA4BaJYwAAq9X+56o1WAAzKKJaXVjNGGCDzQc2Rh9inILsWg93vLlWWLCC+tHaFfadFJrvX/63pqLhBTNw4WpNN8AG+rhawIIs74ctYf1wAA=",
+    "source": "unsplash"
+  },
+  "lime-cooler": {
+    "src": "/dishes/lime-cooler",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoMAA8AA4BaJbACdADcT7uXqiIAAP7p/gwfcsbaP1vvT17Pg4/K/0tNSAq7mmVbok6n4fo6vFphoqkOxFD1BO9yMnxdq2RvQAA=",
+    "source": "unsplash"
+  },
+  "flavoured-milkshakes": {
+    "src": "/dishes/flavoured-milkshakes",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoMAA8AA4BaJZACdAEQEh1qw6mAAPz1jKJIv6cMsg6gOdTO2vMilS1k3GlAr36qQz3SZTe4mHN1UdlwgWdjrZiMAAA=",
+    "source": "unsplash"
+  },
+  "classic-chai": {
+    "src": "/dishes/classic-chai",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoMAA8AA4BaJbACdAC3fwxYyL0AAPUN2IuJDq1Pqfk/hiBvkQV0HqQ7B59iy6bFpjAmzCqkPCG/tO4Tn2H4J5HXX4eiIML2lbmEYuLfAAA=",
+    "source": "unsplash"
+  },
+  "cold-coffee": {
+    "src": "/dishes/cold-coffee",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoMAA8AA4BaJbACdAEO9eojWbYqAP7a1fw35YmloXE1eND8C7X3ZLCORE3SDAd3/Y+EWJtAaKZX8nKnJGNjNJBaSOUAAA==",
+    "source": "unsplash"
+  },
+  "hot-coffee": {
+    "src": "/dishes/hot-coffee",
+    "width": 1200,
+    "height": 1500,
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoMAA8AA4BaJZACdAEedVnMy20joAD+aMhyb3xVVabm4YE5SURqyZ8c8Js9F/2Wnxt4R9RpGMSJTdc+W0VdNJkATsV8A3EuwPv+NYmwAAA=",
+    "source": "unsplash"
+  }
+}

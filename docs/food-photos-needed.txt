@@ -1,0 +1,236 @@
+FOOD PHOTOS FOR THE HAZRATGUNJ MENU
+
+How it works
+1. Put the photos in one folder. Name each file exactly as in the list below
+   (the part before " — "), e.g.  paneer-tikka.jpg
+   .jpg, .jpeg, .png and .webp all work. Capitals and spaces do not matter, and the
+   printed dish name also works when it is unique ("Paneer Tikka.jpg").
+2. Send me the folder path. I run:  npm run build:photos -- "<folder>"
+   Each photo is cropped to 4:5, given the same bright grade and put on its dish.
+   Any file I cannot match to a dish is listed back to you.
+
+How to shoot: portrait (upright) or square, daylight or bright warm light, the dish
+filling most of the frame, plain table or wooden board behind it, no hands, no menu
+cards, no phones, no people.
+
+The three bottled drinks sold at MRP (soft drinks, diet drinks, mineral water) need no photo.
+
+DISHES STILL WITHOUT A PHOTO (75). These show a name card until you send one.
+# Soups
+supreme-veg-manchow.jpg — Supreme Veg Manchow (Veg), as served
+lemon-coriander-veg.jpg — Lemon Coriander (Veg), as served
+supreme-chicken-manchow.jpg — Supreme Chicken Manchow (Non-veg), as served
+hot-and-sour-chicken.jpg — Hot and Sour (Non-veg), as served
+cream-of-chicken.jpg — Cream of Chicken (Non-veg), as served
+lemon-coriander-chicken.jpg — Lemon Coriander (Non-veg), as served
+
+# Tandoor Se
+raunak-e-paneer-tikka.jpg — Raunak-e-Paneer Tikka (Veg), as served
+kumbh-ke-galawat.jpg — Kumbh Ke Galawat (Veg), as served
+dahi-cheesy-kebab.jpg — Dahi Cheesy Kebab (Veg), as served
+kesariya-paneer-tikka.jpg — Kesariya Paneer Tikka (Veg), as served
+lehsooni-paneer-tikka.jpg — Lehsooni Paneer Tikka (Veg), as served
+zaffrani-tangri.jpg — Zaffrani Tangri (Non-veg), as served
+gost-galafi-seekh-kebab.jpg — Gost Galafi Seekh Kebab (Non-veg), as served
+sarson-wali-fish-tikka.jpg — Sarson Wali Fish Tikka (Non-veg), as served
+murg-teen-tigada.jpg — Murg Teen Tigada (Non-veg), as served
+murg-angara.jpg — Murg Angara (Non-veg), as served
+banjara-murg-tikka.jpg — Banjara Murg Tikka (Non-veg), as served
+hazratgunj-veg-tandoor-platter.jpg — Hazratgunj Veg Tandoor Platter (Platters), as served
+hazratgunj-non-veg-kebab-platter.jpg — Hazratgunj Non Veg Kebab Platter (Platters), as served
+murg-tikka-platter.jpg — Murg Tikka Platter (Platters), as served
+lucknowi-kebab-platter.jpg — Lucknowi Kebab Platter (Platters), as served
+
+# Chinese
+hunan-paneer.jpg — Hunan Paneer (Veg), as served
+corny-corns.jpg — Corny Corns (Veg), as served; any one choice (Crispy Corn / Corn Salt and Pepper)
+hunan-chicken.jpg — Hunan Chicken (Non-veg), as served
+fish-chillys.jpg — Fish Chilly's (Non-veg), as served
+
+# Continentals
+minion-burger-veg.jpg — Hazratgunj Minion Burger (Veg), as served
+cheese-salsa-garlic-bread.jpg — Cheese Salsa Garlic Bread (Veg), as served
+cutlet-platter.jpg — Cutlet Platter (Veg), as served
+minion-burger-chicken.jpg — Hazratgunj Minion Burger (Non-veg), as served
+cheesy-chicken-popcorn.jpg — Cheesy Chicken Popcorn (Non-veg), as served
+peri-peri-chicken-tender.jpg — Peri Peri Chicken Tender (Non-veg), as served
+dynamite-prawns.jpg — Dynamite Prawns (Non-veg), as served
+cheesy-crunchy-breast.jpg — Cheesy Crunchy Breast (Non-veg), as served
+
+# Salads
+green-garden-salad.jpg — Green Garden Salad, as served
+onion-salad.jpg — Onion Salad, as served
+laccha-onion-salad.jpg — Laccha Onion Salad, as served
+
+# Janaab Ki Marzi — Indian Affair · Veg
+paneer-khurchan.jpg — Paneer Khurchan (New Arrivals), as served
+paneer-ghee-roast.jpg — Paneer Ghee Roast (New Arrivals), as served
+smokey-palak-bhutta.jpg — Smokey Palak Bhutta (New Arrivals), as served
+paneer-kaleji.jpg — Paneer Kaleji (Signatures), as served
+signature-paneer-pandara-wala.jpg — Signature Paneer Pandara Wala (Signatures), as served
+shaam-savera-kofta.jpg — Shaam Savera Kofta (Koftas), as served
+kesari-kofta.jpg — Kesari Kofta (Koftas), as served
+handi-paneer.jpg — Handi Paneer (Handi), as served
+handi-mushroom.jpg — Handi Mushroom (Handi), as served
+punjabi-paneer.jpg — Punjabi Paneer (Regulars), as served
+aloo-chutney-wala.jpg — Aloo Chutney Wala (Regulars), as served
+
+# Janaab Ki Marzi — Indian Affair · Non-veg
+murg-khurchan.jpg — Murg Khurchan (New Arrivals), as served
+lucknowi-nehari.jpg — Lucknowi Nehari (New Arrivals), as served
+signature-murg-pandara-wala.jpg — Signature Murg Pandara Wala (Signatures), as served; any one version (Regular / Boneless)
+gosht-laal-maas.jpg — Gosht Laal Maas (Gosht), as served
+gosht-awadhi.jpg — Gosht Awadhi (Gosht), as served
+murg-awadhi.jpg — Murg Awadhi (Murg), as served
+daane-daar-rara-murg.jpg — Daane Daar Rara Murg (Murg), as served
+tandoori-bhuna-murg.jpg — Tandoori Bhuna Murg (Murg), as served
+
+# Dal
+signature-dal-hazratgunj.jpg — Signature Dal Hazratgunj, as served
+
+# Rice
+murg-tikka-biryani.jpg — Murg Tikka Biryani, as served
+gosht-biryani.jpg — Gosht Biryani, as served
+egg-biryani.jpg — Egg Biryani, as served
+
+# Breads
+missi-roti.jpg — Missi Roti, as served
+cheese-garlic-naan.jpg — Cheese Garlic Naan, as served
+
+# Pizzeria
+non-veg-pizza.jpg — Non-Veg Pizza, as served; any one choice (Chicken Chilly / Chicken Tikka / Prawns Chilly)
+
+# Sides On the Sides
+masala-pappad.jpg — Masala Pappad, as served
+masala-peanut.jpg — Masala Peanut, as served
+cucumber-raita.jpg — Cucumber Raita, as served
+boondi-raita.jpg — Boondi Raita, as served
+mix-veg-raita.jpg — Mix Veg Raita, as served
+pineapple-raita.jpg — Pineapple Raita, as served
+fruit-raita.jpg — Fruit Raita, as served
+
+# Kuchh Meetha Ho Jaaye
+kesari-jalebi-with-rabri.jpg — Kesari Jalebi with Rabri, as served
+moong-di-dal-da-halwa.jpg — Moong Di Dal Da Halwa, as served
+signature-shahi-kunafa.jpg — Signature Shahi Kunafa, as served
+meethe-da-platter.jpg — Meethe Da Platter, as served
+
+# Refreshers
+heritage-refreshers.jpg — Heritage Refreshers, as served; any one choice (Shikanji / Jaljeera / Aampanna / Kaala-Khatta)
+
+# Creamery Classics — Shakes, chai and coffee
+heritage-special.jpg — Heritage Special, as served; any one choice (Sweet Lassi / Salted Lassi / Chaas / Royalé Mishrambu)
+
+DISHES THAT ALREADY HAVE A DEMO PHOTO (76, optional). Send one only to replace a
+photo you do not like; it takes priority over the demo photo.
+# Soups
+hot-and-sour-veg.jpg — Hot and Sour (Veg), as served
+cream-of-tomato.jpg — Cream of Tomato (Veg), as served
+cream-of-mushroom.jpg — Cream of Mushroom (Veg), as served
+
+# Tandoor Se
+paneer-tikka.jpg — Paneer Tikka (Veg), as served
+hara-bhara-kebab.jpg — Hara Bhara Kebab (Veg), as served
+cheesy-murg-seekh-kebab.jpg — Cheesy Murg Seekh Kebab (Non-veg), as served
+mutton-galawat.jpg — Mutton Galawat (Non-veg), as served
+tandoori-jhinga.jpg — Tandoori Jhinga (Non-veg), as served
+bhatti-da-murg.jpg — Bhatti Da Murg (Non-veg), as served
+
+# Chinese
+three-paper-chillis-veg.jpg — Three Paper Chilli's (Veg), as served; any one choice (Paneer / Mushroom / Crispy Baby Corn / Paneer 65 / Dragon Paneer)
+veg-momos.jpg — Veg Momos (Veg), as served; any one choice (Steamed / Kurkure / Tandoori)
+mighty-manchurian.jpg — Mighty Manchurian (Veg), as served; any one choice (Dry / Semi-gravy / Gravy)
+royale-rolls-veg.jpg — Royale Rolls (Veg), as served; any one choice (Veg Spring Roll / White Pepper Paneer Roll)
+wok-tossed-potatoes.jpg — Wok-Tossed Potatoes (Veg), as served; any one choice (Honey Chilli Potato / Chilli Potato)
+prawns-chillys.jpg — Prawns Chilly's (Non-veg), as served
+lollipop.jpg — Lollipop (Non-veg), as served
+drums-of-heaven.jpg — Drums of Heaven (Non-veg), as served
+three-paper-chillis-chicken.jpg — Three Paper Chilli's (Non-veg), as served; any one choice (Chicken / Crispy Honey / Chicken 65 / Dragon Chicken)
+non-veg-momos.jpg — Non Veg Momos (Non-veg), as served; any one choice (Steamed / Kurkure / Tandoori)
+royale-rolls-chicken.jpg — Royale Rolls (Non-veg), as served; any one choice (Chicken Spring Roll / White Pepper Chicken Roll)
+
+# Continentals
+cheese-cigar-rolls.jpg — Cheese Cigar Rolls (Veg), as served
+classic-bruschetta.jpg — Classic Bruschetta (Veg), as served
+cheese-ball-sticks.jpg — Cheese Ball Sticks (Veg), as served
+chicken-teriyaki.jpg — Chicken Teriyaki (Non-veg), as served
+peri-peri-fish-finger.jpg — Peri Peri Fish Finger (Non-veg), as served
+
+# Salads
+caesar-salad.jpg — Caesar Salad, as served
+
+# Janaab Ki Marzi — Indian Affair · Veg
+tandoori-paneer-tikka-masala.jpg — Tandoori Paneer Tikka Masala (Signatures), as served
+signature-paneer-makkhan-wala.jpg — Signature Paneer Makkhan Wala (Signatures), as served
+signature-paneer-makkhan-masala.jpg — Signature Paneer Makkhan Masala (Signatures), as served
+malai-kofta.jpg — Malai Kofta (Koftas), as served
+aloo-gobhi-adrak-wali.jpg — Aloo Gobhi Adrak Wali (Regulars), as served
+aloo-dum-banarsi.jpg — Aloo Dum Banarsi (Regulars), as served
+paneer-lababdaar.jpg — Paneer Lababdaar (Regulars), as served
+subz-mili-juli.jpg — Subz Mili-Juli (Regulars), as served
+subz-handi.jpg — Subz Handi (Regulars), as served
+
+# Janaab Ki Marzi — Indian Affair · Non-veg
+murg-ghee-roast.jpg — Murg Ghee Roast (New Arrivals), as served
+signature-murg-makkhan-wala.jpg — Signature Murg Makkhan Wala (Signatures), as served; any one version (Regular / Boneless)
+signature-murg-makkhan-masala.jpg — Signature Murg Makkhan Masala (Signatures), as served; any one version (Regular / Boneless)
+signature-hazratgunj-masaledaar-gosht.jpg — Signature Hazratgunj Masaledaar Gosht (Signatures), as served
+khade-masale-ka-bhuna-gosht.jpg — Khade Masale Ka Bhuna Gosht (Gosht), as served
+gosht-rogan-josh.jpg — Gosht Rogan Josh (Gosht), as served
+khade-masale-ke-murg.jpg — Khade Masale Ke Murg (Murg), as served
+dhaabe-da-kukkad.jpg — Dhaabe Da Kukkad (Murg), as served
+
+# Dal
+dal-fry.jpg — Dal Fry, as served
+tadke-waali-dal.jpg — Tadke Waali Dal, as served
+dal-makkhan-wali.jpg — Dal Makkhan Wali, as served
+
+# Rice
+basmati-e-khaas.jpg — Basmati-e-Khaas, as served; any one choice (Steamed Rice / Jeera Rice)
+pulao-please.jpg — Pulao Please, as served; any one choice (Peas Pulao / Subz Pulao)
+hazratgunj-subz-biryani.jpg — Hazratgunj Subz Biryani, as served
+hazratgunj-murg-dum-biryani.jpg — Hazratgunj Murg Dum Biryani, as served
+
+# Breads
+choice-of-roti.jpg — Choice of Roti, as served; any one choice (Plain Roti / Butter Roti / Roomali Roti)
+naan-naan.jpg — Naan Naan, as served; any one choice (Plain Naan / Butter Naan / Garlic Naan)
+kulche.jpg — Kulche, as served; any one choice (Onion / Aloo / Paneer / Mixed / Amritsari)
+parathe.jpg — Parathe, as served; any one choice (Lachha / Mirchi / Pudina)
+hazratgunj-bread-basket.jpg — Hazratgunj Bread Basket, as served
+
+# Noodles & Rice — Wok-tossed favourites
+fried-rice.jpg — Fried Rice, as served; any one version (Veg / Chicken / Prawns / Mixed)
+hakka-noodles.jpg — Hakka Noodles, as served; any one version (Veg / Chicken / Prawns / Mixed)
+schezwan-noodles.jpg — Schezwan Noodles, as served; any one version (Veg / Chicken / Prawns / Mixed)
+chilly-garlic-noodles.jpg — Chilly Garlic Noodles, as served; any one version (Veg / Chicken / Prawns / Mixed)
+
+# Pasta — Craft your own
+craft-your-own-pasta.jpg — Craft Your Own Pasta, as served; any one version (Veg / Non-veg)
+
+# Pizzeria
+veg-pizza.jpg — Veg Pizza, as served; any one choice (Paneer Chilly / Mushroom Chilly / Margherita)
+
+# Sandwiches
+sandwich.jpg — Sandwich, as served; any one version (Veg / Non-veg)
+
+# Sides On the Sides
+french-fries.jpg — French Fries, as served
+peri-peri-fries.jpg — Peri Peri Fries, as served
+
+# Kuchh Meetha Ho Jaaye
+gulaab-jaamun-with-rabri.jpg — Gulaab Jaamun with Rabri, as served
+gajar-da-halwa.jpg — Gajar Da Halwa, as served
+sizzling-brownie-with-ice-cream.jpg — Sizzling Brownie with Ice Cream, as served
+signature-shahi-tukda.jpg — Signature Shahi Tukda, as served
+
+# Refreshers
+bartenders-special.jpg — Bartender's Special, as served; any one choice (Lychee Delight / Imli Aunty / Virgin Pinacolada)
+lemonade.jpg — Lemonade, as served; any one choice (Brazilian / Watermelon / Pineapple / Apple)
+virgin-mojito.jpg — Virgin Mojito, as served; any one choice (Mint / Green Apple / Watermelon / Orange)
+lime-cooler.jpg — Lime Cooler, as served; any one choice (Sweet / Salty / Mix)
+
+# Creamery Classics — Shakes, chai and coffee
+flavoured-milkshakes.jpg — Flavoured Milkshakes, as served; any one choice (Oreo / KitKat / Chocolate / Vanilla / Strawberry / Mix Fruit)
+classic-chai.jpg — Classic Chai, as served; any one choice (Kadak / Masala / Ginger)
+cold-coffee.jpg — Cold Coffee, as served
+hot-coffee.jpg — Hot Coffee, as served; any one choice (Café Latte / Black Coffee / Homemade Coffee)

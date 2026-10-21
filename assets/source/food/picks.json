@@ -1,0 +1,762 @@
+{
+  "_doc": "Image decision per dish. tier A = restaurant's Google listing (customer upload), B = Unsplash (free licence), T = typographic card. 'src' is the Google file in ./google or the Unsplash photo id. 'crop' (optional) = focus point 0..1 for the 4:5 crop. 'status' = candidate | approved | rejected (set after close-up check).",
+  "items": {
+    "supreme-veg-manchow": {
+      "tier": "T",
+      "why": "No photo of Indo-Chinese manchow (dark soup, fried noodles) found."
+    },
+    "hot-and-sour-veg": {
+      "tier": "B",
+      "src": "W9jAHNjueSE",
+      "status": "approved"
+    },
+    "cream-of-tomato": {
+      "tier": "B",
+      "src": "xVgE_mCA8fk",
+      "status": "approved"
+    },
+    "cream-of-mushroom": {
+      "tier": "B",
+      "src": "fRmdIVd9bcs",
+      "status": "approved"
+    },
+    "lemon-coriander-veg": {
+      "tier": "T",
+      "why": "No clear lemon-coriander soup."
+    },
+    "supreme-chicken-manchow": {
+      "tier": "T",
+      "why": "No manchow photo."
+    },
+    "hot-and-sour-chicken": {
+      "tier": "T",
+      "why": "Avoid reusing the veg photo for a different dish."
+    },
+    "cream-of-chicken": {
+      "tier": "T",
+      "why": "Cream soups are indistinguishable; nothing shows chicken."
+    },
+    "lemon-coriander-chicken": {
+      "tier": "T",
+      "why": "No clear match."
+    },
+    "raunak-e-paneer-tikka": {
+      "tier": "T",
+      "why": "House variant; appearance unknown."
+    },
+    "kumbh-ke-galawat": {
+      "tier": "T",
+      "why": "No mushroom galawat photo."
+    },
+    "paneer-tikka": {
+      "tier": "B",
+      "src": "WmKXu-bzygo",
+      "status": "approved",
+      "note": "Replaced 85gaOsWNsHo (looked like mushroom)."
+    },
+    "dahi-cheesy-kebab": {
+      "tier": "T",
+      "why": "No dahi kebab photo."
+    },
+    "hara-bhara-kebab": {
+      "tier": "A",
+      "src": "hara-bhara-kebab",
+      "status": "approved",
+      "focus": [
+        0.52,
+        0.5
+      ]
+    },
+    "kesariya-paneer-tikka": {
+      "tier": "T",
+      "why": "Saffron marinade colour can't be matched."
+    },
+    "lehsooni-paneer-tikka": {
+      "tier": "T",
+      "why": "House variant."
+    },
+    "zaffrani-tangri": {
+      "tier": "T",
+      "why": "Saffron tangri colour can't be matched."
+    },
+    "gost-galafi-seekh-kebab": {
+      "tier": "T",
+      "why": "Stock seekh lacks the gilafi pepper coating."
+    },
+    "sarson-wali-fish-tikka": {
+      "tier": "T",
+      "why": "Only red tikka found; fish vs chicken unclear, mustard marinade is usually yellow."
+    },
+    "cheesy-murg-seekh-kebab": {
+      "tier": "B",
+      "src": "3Je9IRHdFjs",
+      "status": "approved"
+    },
+    "mutton-galawat": {
+      "tier": "B",
+      "src": "LYXeNXOn3j0",
+      "status": "approved"
+    },
+    "murg-teen-tigada": {
+      "tier": "T",
+      "why": "Dish composition unknown."
+    },
+    "tandoori-jhinga": {
+      "tier": "B",
+      "src": "CyPxAX-tlA4",
+      "status": "approved"
+    },
+    "bhatti-da-murg": {
+      "tier": "B",
+      "src": "M0SGPmTIOrc",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "murg-angara": {
+      "tier": "T",
+      "why": "No distinct angara tikka; avoid duplicate."
+    },
+    "banjara-murg-tikka": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "hazratgunj-veg-tandoor-platter": {
+      "tier": "T",
+      "why": "House platter."
+    },
+    "hazratgunj-non-veg-kebab-platter": {
+      "tier": "T",
+      "why": "Stock platters are Middle Eastern."
+    },
+    "murg-tikka-platter": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "lucknowi-kebab-platter": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "hunan-paneer": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "three-paper-chillis-veg": {
+      "tier": "A",
+      "src": "chilli-paneer",
+      "status": "approved",
+      "focus": [
+        0.45,
+        0.45
+      ]
+    },
+    "veg-momos": {
+      "tier": "B",
+      "src": "90SXZzJpySc",
+      "status": "approved"
+    },
+    "mighty-manchurian": {
+      "tier": "B",
+      "src": "csq-x3YSXoo",
+      "status": "approved"
+    },
+    "royale-rolls-veg": {
+      "tier": "B",
+      "src": "snEe9nRTqyY",
+      "status": "approved"
+    },
+    "wok-tossed-potatoes": {
+      "tier": "A",
+      "src": "honey-chilli-potato",
+      "status": "approved"
+    },
+    "corny-corns": {
+      "tier": "T",
+      "why": "Stock shows raw corn only."
+    },
+    "hunan-chicken": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "prawns-chillys": {
+      "tier": "B",
+      "src": "4LoGKVmUJsI",
+      "status": "approved"
+    },
+    "fish-chillys": {
+      "tier": "T",
+      "why": "No Indo-Chinese chilli fish."
+    },
+    "lollipop": {
+      "tier": "B",
+      "src": "x6W7MyNS17k",
+      "status": "approved",
+      "focus": [
+        0.45,
+        0.42
+      ],
+      "zoom": 1.5
+    },
+    "drums-of-heaven": {
+      "tier": "A",
+      "src": "drums-of-heaven",
+      "status": "approved",
+      "focus": [
+        0.45,
+        0.5
+      ]
+    },
+    "three-paper-chillis-chicken": {
+      "tier": "B",
+      "src": "7NEGLCTAMzg",
+      "status": "approved"
+    },
+    "non-veg-momos": {
+      "tier": "B",
+      "src": "yJd4jmyDIF0",
+      "status": "approved"
+    },
+    "royale-rolls-chicken": {
+      "tier": "B",
+      "src": "VeK39ynd3Ac",
+      "status": "approved"
+    },
+    "minion-burger-veg": {
+      "tier": "T",
+      "why": "Stock burgers are single beef patties; dish is 3 veg patties."
+    },
+    "cheese-salsa-garlic-bread": {
+      "tier": "T",
+      "why": "No salsa visible on stock garlic bread."
+    },
+    "cheese-cigar-rolls": {
+      "tier": "A",
+      "src": "cheese-cigar-rolls",
+      "status": "approved",
+      "focus": [
+        0.62,
+        0.6
+      ]
+    },
+    "classic-bruschetta": {
+      "tier": "B",
+      "src": "F4qVqfkG2Aw",
+      "status": "approved"
+    },
+    "cheese-ball-sticks": {
+      "tier": "B",
+      "src": "sdz8yS12NoY",
+      "status": "approved"
+    },
+    "cutlet-platter": {
+      "tier": "T",
+      "why": "No assorted cutlet platter."
+    },
+    "minion-burger-chicken": {
+      "tier": "T",
+      "why": "Dish is 3 patties; stock shows one."
+    },
+    "cheesy-chicken-popcorn": {
+      "tier": "T",
+      "why": "No clear match."
+    },
+    "peri-peri-chicken-tender": {
+      "tier": "T",
+      "why": "Stock tenders are fried, dish is grilled."
+    },
+    "dynamite-prawns": {
+      "tier": "T",
+      "why": "No results."
+    },
+    "chicken-teriyaki": {
+      "tier": "B",
+      "src": "VhuC3z2o8vQ",
+      "status": "approved"
+    },
+    "cheesy-crunchy-breast": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "peri-peri-fish-finger": {
+      "tier": "B",
+      "src": "9fUCAqck4Zs",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "green-garden-salad": {
+      "tier": "T",
+      "why": "Stock salads are Western leafy salads."
+    },
+    "onion-salad": {
+      "tier": "T",
+      "why": "Raw onions only."
+    },
+    "laccha-onion-salad": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "caesar-salad": {
+      "tier": "B",
+      "src": "FK-UKNip0pE",
+      "status": "approved"
+    },
+    "paneer-khurchan": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "paneer-ghee-roast": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "smokey-palak-bhutta": {
+      "tier": "T",
+      "why": "No spinach-corn photo."
+    },
+    "tandoori-paneer-tikka-masala": {
+      "tier": "B",
+      "src": "q0LIv3Vd_ss",
+      "status": "approved"
+    },
+    "paneer-kaleji": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "signature-paneer-makkhan-wala": {
+      "tier": "B",
+      "src": "vgTntT8PmIM",
+      "status": "approved"
+    },
+    "signature-paneer-makkhan-masala": {
+      "tier": "B",
+      "src": "gml9g1kRQcM",
+      "status": "approved"
+    },
+    "signature-paneer-pandara-wala": {
+      "tier": "T",
+      "why": "Regional gravy; appearance unknown."
+    },
+    "shaam-savera-kofta": {
+      "tier": "T",
+      "why": "Spinach koftas not found."
+    },
+    "kesari-kofta": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "malai-kofta": {
+      "tier": "B",
+      "src": "IOeXR0RCZtE",
+      "status": "approved"
+    },
+    "handi-paneer": {
+      "tier": "T",
+      "why": "No match distinct from makhani photos."
+    },
+    "handi-mushroom": {
+      "tier": "T",
+      "why": "Stock mushroom curries are dark masala, dish is creamy."
+    },
+    "aloo-gobhi-adrak-wali": {
+      "tier": "B",
+      "src": "nYw8gZyihNM",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "aloo-dum-banarsi": {
+      "tier": "B",
+      "src": "72dqP12YCbw",
+      "status": "approved"
+    },
+    "punjabi-paneer": {
+      "tier": "T",
+      "why": "Avoid near-duplicate paneer photos."
+    },
+    "paneer-lababdaar": {
+      "tier": "A",
+      "src": "paneer-lababdar",
+      "status": "approved",
+      "focus": [
+        0.55,
+        0.5
+      ]
+    },
+    "subz-mili-juli": {
+      "tier": "B",
+      "src": "UyOO2E8Ap-Y",
+      "status": "approved"
+    },
+    "subz-handi": {
+      "tier": "B",
+      "src": "NfoGcdYy_sw",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "aloo-chutney-wala": {
+      "tier": "T",
+      "why": "No mint-coriander potatoes."
+    },
+    "murg-khurchan": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "murg-ghee-roast": {
+      "tier": "B",
+      "src": "kF2RbGfizF4",
+      "status": "approved"
+    },
+    "lucknowi-nehari": {
+      "tier": "T",
+      "why": "Only candidate is soft/over-processed at full size."
+    },
+    "signature-murg-makkhan-wala": {
+      "tier": "B",
+      "src": "zRZxs9tDha0",
+      "status": "approved"
+    },
+    "signature-murg-makkhan-masala": {
+      "tier": "B",
+      "src": "ChM5be5nhis",
+      "status": "approved"
+    },
+    "signature-murg-pandara-wala": {
+      "tier": "T",
+      "why": "Regional gravy; appearance unknown."
+    },
+    "signature-hazratgunj-masaledaar-gosht": {
+      "tier": "B",
+      "src": "nxy3fGcCkX0",
+      "status": "approved"
+    },
+    "khade-masale-ka-bhuna-gosht": {
+      "tier": "B",
+      "src": "7-TOCB28rms",
+      "status": "approved"
+    },
+    "gosht-rogan-josh": {
+      "tier": "B",
+      "src": "Y8D0t9baHJw",
+      "status": "approved"
+    },
+    "gosht-laal-maas": {
+      "tier": "T",
+      "why": "No results."
+    },
+    "gosht-awadhi": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "murg-awadhi": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "daane-daar-rara-murg": {
+      "tier": "T",
+      "why": "No match."
+    },
+    "tandoori-bhuna-murg": {
+      "tier": "T",
+      "why": "Candidate was chicken tikka masala (creamy), not bhuna."
+    },
+    "khade-masale-ke-murg": {
+      "tier": "B",
+      "src": "HRamW92xlCI",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "dhaabe-da-kukkad": {
+      "tier": "B",
+      "src": "tsQhEvzU6MQ",
+      "status": "approved"
+    },
+    "dal-fry": {
+      "tier": "B",
+      "src": "WM0qTXnH41Q",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "tadke-waali-dal": {
+      "tier": "B",
+      "src": "bSnw2hGdmHo",
+      "status": "approved"
+    },
+    "dal-makkhan-wali": {
+      "tier": "B",
+      "src": "EvxE8j6lfyY",
+      "status": "approved"
+    },
+    "signature-dal-hazratgunj": {
+      "tier": "T",
+      "why": "Candidate gravy was tomato-red, not black dal."
+    },
+    "basmati-e-khaas": {
+      "tier": "B",
+      "src": "xmuIgjuQG0M",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "pulao-please": {
+      "tier": "B",
+      "src": "EE6nlhmmhJo",
+      "status": "approved"
+    },
+    "hazratgunj-subz-biryani": {
+      "tier": "A",
+      "src": "egg-biryani",
+      "status": "approved",
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "note": "Customer tagged this photo \"Egg Biryani\" on Google, but it shows a vegetable biryani with no egg. Owner to confirm."
+    },
+    "hazratgunj-murg-dum-biryani": {
+      "tier": "B",
+      "src": "2hpTXgfy6pg",
+      "status": "approved"
+    },
+    "murg-tikka-biryani": {
+      "tier": "T",
+      "why": "No tikka biryani."
+    },
+    "gosht-biryani": {
+      "tier": "T",
+      "why": "Meat in stock biryani can't be identified; one has a plate logo."
+    },
+    "egg-biryani": {
+      "tier": "T",
+      "why": "Google photo tagged Egg Biryani shows no egg (used for Subz Biryani instead)."
+    },
+    "choice-of-roti": {
+      "tier": "A",
+      "src": "tandoori-roti",
+      "status": "approved",
+      "focus": [
+        0.5,
+        0.6
+      ]
+    },
+    "naan-naan": {
+      "tier": "A",
+      "src": "butter-naan-chicken",
+      "status": "approved",
+      "focus": [
+        0.3,
+        0.55
+      ],
+      "zoom": 1.25
+    },
+    "kulche": {
+      "tier": "A",
+      "src": "paneer-kulche",
+      "status": "approved",
+      "focus": [
+        0.42,
+        0.4
+      ],
+      "zoom": 1.15
+    },
+    "parathe": {
+      "tier": "B",
+      "src": "uOcFC1NH5h0",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "missi-roti": {
+      "tier": "T",
+      "why": "Candidate was a plain roti."
+    },
+    "cheese-garlic-naan": {
+      "tier": "T",
+      "why": "Only candidate is mostly out-of-focus at full size."
+    },
+    "hazratgunj-bread-basket": {
+      "tier": "B",
+      "src": "VvJDbhvSmnI",
+      "status": "approved"
+    },
+    "fried-rice": {
+      "tier": "B",
+      "src": "rQX9eVpSFz8",
+      "status": "approved"
+    },
+    "hakka-noodles": {
+      "tier": "B",
+      "src": "sD2InRYbjBw",
+      "status": "approved"
+    },
+    "schezwan-noodles": {
+      "tier": "B",
+      "src": "_2N4aKtju_w",
+      "status": "approved"
+    },
+    "chilly-garlic-noodles": {
+      "tier": "B",
+      "src": "o77dNRrgcn0",
+      "status": "approved"
+    },
+    "craft-your-own-pasta": {
+      "tier": "B",
+      "src": "0CHWRa_ZqJ4",
+      "status": "approved"
+    },
+    "veg-pizza": {
+      "tier": "B",
+      "src": "x00CzBt4Dfk",
+      "status": "approved"
+    },
+    "non-veg-pizza": {
+      "tier": "T",
+      "why": "Topping cubes could be paneer; not safe on a non-veg item."
+    },
+    "sandwich": {
+      "tier": "B",
+      "src": "BiWb1Y8wpZk",
+      "status": "approved",
+      "note": "Replaced A5-_4yJFFj4 (ham layers)."
+    },
+    "masala-pappad": {
+      "tier": "T",
+      "why": "No topped papad."
+    },
+    "masala-peanut": {
+      "tier": "T",
+      "why": "No results."
+    },
+    "cucumber-raita": {
+      "tier": "T",
+      "why": "No raita photos."
+    },
+    "boondi-raita": {
+      "tier": "T",
+      "why": "No raita photos."
+    },
+    "mix-veg-raita": {
+      "tier": "T",
+      "why": "No raita photos."
+    },
+    "pineapple-raita": {
+      "tier": "T",
+      "why": "Pineapple fruit only."
+    },
+    "fruit-raita": {
+      "tier": "T",
+      "why": "No raita photos."
+    },
+    "french-fries": {
+      "tier": "B",
+      "src": "8YBHgP0WrEo",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "peri-peri-fries": {
+      "tier": "B",
+      "src": "nrnrEUKCyT4",
+      "status": "approved"
+    },
+    "gulaab-jaamun-with-rabri": {
+      "tier": "A",
+      "src": "gulab-jamun-rabri",
+      "status": "approved"
+    },
+    "kesari-jalebi-with-rabri": {
+      "tier": "T",
+      "why": "No jalebi with rabri."
+    },
+    "gajar-da-halwa": {
+      "tier": "B",
+      "src": "ih9M_EzL14w",
+      "status": "approved"
+    },
+    "moong-di-dal-da-halwa": {
+      "tier": "T",
+      "why": "No results."
+    },
+    "sizzling-brownie-with-ice-cream": {
+      "tier": "B",
+      "src": "vhlMKoHdmDc",
+      "status": "approved"
+    },
+    "signature-shahi-tukda": {
+      "tier": "A",
+      "src": "shahi-tukda",
+      "status": "approved",
+      "focus": [
+        0.45,
+        0.45
+      ]
+    },
+    "signature-shahi-kunafa": {
+      "tier": "T",
+      "why": "Stock shows kunafa nests; dish is layered."
+    },
+    "meethe-da-platter": {
+      "tier": "T",
+      "why": "Stock platters are Western desserts."
+    },
+    "bartenders-special": {
+      "tier": "B",
+      "src": "HSfIEx4oe1Y",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "heritage-refreshers": {
+      "tier": "T",
+      "why": "Stock tamarind/aam panna results are brands or unrelated."
+    },
+    "lemonade": {
+      "tier": "B",
+      "src": "O9Whoh12czM",
+      "status": "approved"
+    },
+    "virgin-mojito": {
+      "tier": "B",
+      "src": "aM3LR10BeAc",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "lime-cooler": {
+      "tier": "B",
+      "src": "U4mCZiti-aM",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "flavoured-milkshakes": {
+      "tier": "B",
+      "src": "4FujjkcI40g",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "classic-chai": {
+      "tier": "B",
+      "src": "HHM4Ejj0SCE",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "cold-coffee": {
+      "tier": "B",
+      "src": "utdcuLvaOW0",
+      "status": "approved"
+    },
+    "hot-coffee": {
+      "tier": "B",
+      "src": "3n3mPoGko8g",
+      "status": "approved",
+      "note": "Brighter photo (client request, 2026-10-21)."
+    },
+    "heritage-special": {
+      "tier": "T",
+      "why": "Lassi photos show shop signage or hands."
+    },
+    "soft-drinks": {
+      "tier": "T",
+      "why": "Branded products; MRP item."
+    },
+    "diet-refreshments": {
+      "tier": "T",
+      "why": "Branded products; MRP item."
+    },
+    "mineral-water": {
+      "tier": "T",
+      "why": "MRP item."
+    }
+  }
+}

@@ -1,0 +1,3021 @@
+{
+  "meta": {
+    "currency": "INR",
+    "transcribedOn": "2026-10-21",
+    "source": "Printed à la carte menu, photographed pages in assets/source/menu (page-05 to page-18). Banquet pages excluded.",
+    "taxNote": "All prices are in INR and exclusive of applicable taxes.",
+    "serviceNote": "Prepared fresh to order. Please inform our team of any food allergies or dietary requirements before ordering."
+  },
+  "categories": [
+    {
+      "id": "soups",
+      "name": "Soups",
+      "tab": "Soups",
+      "prepTime": "15–25 min",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "id": "tandoor",
+      "name": "Tandoor Se",
+      "tab": "Tandoor",
+      "prepTime": "25–35 min",
+      "note": "Kebab and tikka servings are 6 pieces. Platters are 12 pieces.",
+      "pages": [
+        11
+      ]
+    },
+    {
+      "id": "chinese",
+      "name": "Chinese",
+      "tab": "Chinese",
+      "prepTime": "25–35 min",
+      "note": "Dry items are served in 8 pieces, gravy items in 6, rolls in 8.",
+      "pages": [
+        8
+      ]
+    },
+    {
+      "id": "continentals",
+      "name": "Continentals",
+      "tab": "Continental",
+      "prepTime": "25–35 min",
+      "pages": [
+        14
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "Salads",
+      "tab": "Salads",
+      "prepTime": "25–35 min",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "id": "mains-veg",
+      "name": "Janaab Ki Marzi",
+      "tagline": "Indian Affair · Veg",
+      "tab": "Curries · Veg",
+      "prepTime": "35–45 min",
+      "note": "Standard portion size is 800 ml.",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "id": "mains-nonveg",
+      "name": "Janaab Ki Marzi",
+      "tagline": "Indian Affair · Non-veg",
+      "tab": "Curries · Non-veg",
+      "prepTime": "35–45 min",
+      "note": "Standard portion size is 800 ml.",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "id": "dal",
+      "name": "Dal",
+      "tab": "Dal",
+      "prepTime": "35–45 min",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "rice",
+      "name": "Rice",
+      "tab": "Rice & Biryani",
+      "prepTime": "35–45 min",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "breads",
+      "name": "Breads",
+      "tab": "Breads",
+      "prepTime": "35–45 min",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "id": "noodles",
+      "name": "Noodles & Rice",
+      "tagline": "Wok-tossed favourites",
+      "tab": "Noodles",
+      "prepTime": "25–35 min",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta",
+      "tagline": "Craft your own",
+      "tab": "Pasta",
+      "prepTime": "25–35 min",
+      "pages": [
+        6
+      ]
+    },
+    {
+      "id": "pizzeria",
+      "name": "Pizzeria",
+      "tab": "Pizza",
+      "prepTime": "25–35 min",
+      "availability": "Served until 7:00 PM",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "id": "sandwiches",
+      "name": "Sandwiches",
+      "tab": "Sandwiches",
+      "prepTime": "25–35 min",
+      "availability": "Served until 7:00 PM",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "id": "sides",
+      "name": "Sides On the Sides",
+      "tab": "Sides",
+      "prepTime": "15–25 min",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Kuchh Meetha Ho Jaaye",
+      "tab": "Desserts",
+      "prepTime": "15–25 min",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "id": "refreshers",
+      "name": "Refreshers",
+      "tab": "Refreshers",
+      "prepTime": "15–25 min",
+      "pages": [
+        7
+      ]
+    },
+    {
+      "id": "creamery",
+      "name": "Creamery Classics",
+      "tagline": "Shakes, chai and coffee",
+      "tab": "Shakes & Chai",
+      "prepTime": "15–25 min",
+      "pages": [
+        7
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "supreme-veg-manchow",
+      "category": "soups",
+      "group": "Veg",
+      "name": "Supreme Veg Manchow",
+      "description": "Most popular Asian soup, served with crispy fried noodles on the sides.",
+      "descriptionSource": "menu",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 10
+    },
+    {
+      "id": "hot-and-sour-veg",
+      "category": "soups",
+      "group": "Veg",
+      "name": "Hot and Sour",
+      "description": "Flavourful broth of fresh vegetables infused with oriental spices.",
+      "descriptionSource": "menu",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 10
+    },
+    {
+      "id": "cream-of-tomato",
+      "category": "soups",
+      "group": "Veg",
+      "name": "Cream of Tomato",
+      "description": "A smooth, rich and velvety soup, enriched in the tomatoes.",
+      "descriptionSource": "menu",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 10
+    },
+    {
+      "id": "cream-of-mushroom",
+      "category": "soups",
+      "group": "Veg",
+      "name": "Cream of Mushroom",
+      "description": "A rich, velvety soup, made with fresh mushroom and a thickened base of butter and cream.",
+      "descriptionSource": "menu",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 10
+    },
+    {
+      "id": "lemon-coriander-veg",
+      "category": "soups",
+      "group": "Veg",
+      "name": "Lemon Coriander",
+      "description": "A light, healthy and vibrant clear soup, flavoured with fresh lemon juice and coriander leaf.",
+      "descriptionSource": "menu",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 10
+    },
+    {
+      "id": "supreme-chicken-manchow",
+      "category": "soups",
+      "group": "Non-veg",
+      "name": "Supreme Chicken Manchow",
+      "description": "Most popular Asian soup, served with crispy fried noodles on the sides.",
+      "descriptionSource": "menu",
+      "price": 269,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 10
+    },
+    {
+      "id": "hot-and-sour-chicken",
+      "category": "soups",
+      "group": "Non-veg",
+      "name": "Hot and Sour",
+      "description": "Flavourful broth of proper tender chicken infused with oriental spices.",
+      "descriptionSource": "menu",
+      "price": 269,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 10
+    },
+    {
+      "id": "cream-of-chicken",
+      "category": "soups",
+      "group": "Non-veg",
+      "name": "Cream of Chicken",
+      "description": "Thick, smooth and velvety soup, made with chicken, milk and cream, featuring tender chicken & mild seasoning.",
+      "descriptionSource": "menu",
+      "price": 269,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 10
+    },
+    {
+      "id": "lemon-coriander-chicken",
+      "category": "soups",
+      "group": "Non-veg",
+      "name": "Lemon Coriander",
+      "description": "A light, healthy and vibrant clear soup, flavoured with fresh lemon juice and coriander leaf, with minced chicken.",
+      "descriptionSource": "menu",
+      "price": 269,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 10
+    },
+    {
+      "id": "raunak-e-paneer-tikka",
+      "category": "tandoor",
+      "group": "Veg",
+      "name": "Raunak-e-Paneer Tikka",
+      "description": "Paneer tikka in the house marinade, cooked in the tandoor.",
+      "descriptionSource": "written",
+      "price": 419,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "kumbh-ke-galawat",
+      "category": "tandoor",
+      "group": "Veg",
+      "name": "Kumbh Ke Galawat",
+      "description": "Soft mushroom kebabs in the galawat style.",
+      "descriptionSource": "written",
+      "price": 379,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 11
+    },
+    {
+      "id": "paneer-tikka",
+      "category": "tandoor",
+      "group": "Veg",
+      "name": "Paneer Tikka",
+      "description": "Marinated paneer cubes cooked in the tandoor.",
+      "descriptionSource": "written",
+      "price": 419,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 11
+    },
+    {
+      "id": "dahi-cheesy-kebab",
+      "category": "tandoor",
+      "group": "Veg",
+      "name": "Dahi Cheesy Kebab",
+      "description": "Kebabs of hung curd and cheese.",
+      "descriptionSource": "written",
+      "price": 379,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 11
+    },
+    {
+      "id": "hara-bhara-kebab",
+      "category": "tandoor",
+      "group": "Veg",
+      "name": "Hara Bhara Kebab",
+      "description": "Green kebabs of spinach and peas.",
+      "descriptionSource": "written",
+      "price": 379,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 11
+    },
+    {
+      "id": "kesariya-paneer-tikka",
+      "category": "tandoor",
+      "group": "Veg",
+      "name": "Kesariya Paneer Tikka",
+      "description": "Paneer tikka in a saffron marinade.",
+      "descriptionSource": "written",
+      "price": 419,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "lehsooni-paneer-tikka",
+      "category": "tandoor",
+      "group": "Veg",
+      "name": "Lehsooni Paneer Tikka",
+      "description": "Paneer tikka in a garlic marinade.",
+      "descriptionSource": "written",
+      "price": 419,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "zaffrani-tangri",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Zaffrani Tangri",
+      "description": "Chicken drumsticks in a saffron marinade, cooked in the tandoor.",
+      "descriptionSource": "written",
+      "price": 549,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "gost-galafi-seekh-kebab",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Gost Galafi Seekh Kebab",
+      "description": "Minced mutton seekh kebabs from the tandoor.",
+      "descriptionSource": "written",
+      "price": 669,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "sarson-wali-fish-tikka",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Sarson Wali Fish Tikka",
+      "description": "Fish tikka in a mustard marinade.",
+      "descriptionSource": "written",
+      "price": 599,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "cheesy-murg-seekh-kebab",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Cheesy Murg Seekh Kebab",
+      "description": "Minced chicken seekh kebabs with cheese.",
+      "descriptionSource": "written",
+      "price": 509,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "mutton-galawat",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Mutton Galawat",
+      "description": "Soft minced mutton kebabs in the Lucknowi galawat style.",
+      "descriptionSource": "written",
+      "price": 689,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 11
+    },
+    {
+      "id": "murg-teen-tigada",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Murg Teen Tigada",
+      "description": "A trio of chicken tikkas from the tandoor.",
+      "descriptionSource": "written",
+      "price": 649,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 11
+    },
+    {
+      "id": "tandoori-jhinga",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Tandoori Jhinga",
+      "description": "Marinated prawns cooked in the tandoor.",
+      "descriptionSource": "written",
+      "price": 829,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 11
+    },
+    {
+      "id": "bhatti-da-murg",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Bhatti Da Murg",
+      "description": "Punjabi-style chicken roasted in the tandoor.",
+      "descriptionSource": "written",
+      "price": 499,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 11
+    },
+    {
+      "id": "murg-angara",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Murg Angara",
+      "description": "Smoky, fiery chicken tikka.",
+      "descriptionSource": "written",
+      "price": 499,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 11
+    },
+    {
+      "id": "banjara-murg-tikka",
+      "category": "tandoor",
+      "group": "Non-veg",
+      "name": "Banjara Murg Tikka",
+      "description": "Chicken tikka in a rustic banjara spice marinade.",
+      "descriptionSource": "written",
+      "price": 519,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 11
+    },
+    {
+      "id": "hazratgunj-veg-tandoor-platter",
+      "category": "tandoor",
+      "group": "Platters",
+      "name": "Hazratgunj Veg Tandoor Platter",
+      "description": "An assortment of vegetarian kebabs and tikkas, 12 pieces.",
+      "descriptionSource": "written",
+      "price": 1049,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new",
+        "signature"
+      ],
+      "page": 11
+    },
+    {
+      "id": "hazratgunj-non-veg-kebab-platter",
+      "category": "tandoor",
+      "group": "Platters",
+      "name": "Hazratgunj Non Veg Kebab Platter",
+      "description": "An assortment of non-vegetarian kebabs, 12 pieces.",
+      "descriptionSource": "written",
+      "price": 1249,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new",
+        "signature"
+      ],
+      "page": 11
+    },
+    {
+      "id": "murg-tikka-platter",
+      "category": "tandoor",
+      "group": "Platters",
+      "name": "Murg Tikka Platter",
+      "description": "An assortment of chicken tikkas, 12 pieces.",
+      "descriptionSource": "written",
+      "price": 1249,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "lucknowi-kebab-platter",
+      "category": "tandoor",
+      "group": "Platters",
+      "name": "Lucknowi Kebab Platter",
+      "description": "An assortment of Lucknowi kebabs, 12 pieces.",
+      "descriptionSource": "written",
+      "price": 1249,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 11
+    },
+    {
+      "id": "hunan-paneer",
+      "category": "chinese",
+      "group": "Veg",
+      "name": "Hunan Paneer",
+      "description": "Paneer cubes, aromatics and seasonings tossed in spicy Hunan-style chilli sauce.",
+      "descriptionSource": "menu",
+      "price": 449,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 8
+    },
+    {
+      "id": "three-paper-chillis-veg",
+      "category": "chinese",
+      "group": "Veg",
+      "name": "Three Paper Chilli's",
+      "description": "Paneer, mushroom, crispy baby corn, paneer 65 or dragon paneer.",
+      "descriptionSource": "options",
+      "price": 419,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "choice",
+          "label": "Choose one",
+          "required": true,
+          "choices": [
+            {
+              "label": "Paneer"
+            },
+            {
+              "label": "Mushroom"
+            },
+            {
+              "label": "Crispy Baby Corn"
+            },
+            {
+              "label": "Paneer 65"
+            },
+            {
+              "label": "Dragon Paneer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veg-momos",
+      "category": "chinese",
+      "group": "Veg",
+      "name": "Veg Momos",
+      "description": "Steamed, kurkure or tandoori.",
+      "descriptionSource": "options",
+      "price": 349,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "style",
+          "label": "Style",
+          "required": true,
+          "choices": [
+            {
+              "label": "Steamed"
+            },
+            {
+              "label": "Kurkure"
+            },
+            {
+              "label": "Tandoori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mighty-manchurian",
+      "category": "chinese",
+      "group": "Veg",
+      "name": "Mighty Manchurian",
+      "description": "Dry, semi-gravy or gravy.",
+      "descriptionSource": "options",
+      "price": 349,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "style",
+          "label": "Style",
+          "required": true,
+          "choices": [
+            {
+              "label": "Dry"
+            },
+            {
+              "label": "Semi-gravy"
+            },
+            {
+              "label": "Gravy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royale-rolls-veg",
+      "category": "chinese",
+      "group": "Veg",
+      "name": "Royale Rolls",
+      "description": "Veg spring roll or white pepper paneer roll.",
+      "descriptionSource": "options",
+      "price": 349,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "roll",
+          "label": "Roll",
+          "required": true,
+          "choices": [
+            {
+              "label": "Veg Spring Roll"
+            },
+            {
+              "label": "White Pepper Paneer Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wok-tossed-potatoes",
+      "category": "chinese",
+      "group": "Veg",
+      "name": "Wok-Tossed Potatoes",
+      "description": "Honey chilli potato or chilli potato.",
+      "descriptionSource": "options",
+      "price": 349,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "style",
+          "label": "Style",
+          "required": true,
+          "choices": [
+            {
+              "label": "Honey Chilli Potato"
+            },
+            {
+              "label": "Chilli Potato"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corny-corns",
+      "category": "chinese",
+      "group": "Veg",
+      "name": "Corny Corns",
+      "description": "Crispy corn or corn salt and pepper.",
+      "descriptionSource": "options",
+      "price": 349,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "style",
+          "label": "Style",
+          "required": true,
+          "choices": [
+            {
+              "label": "Crispy Corn"
+            },
+            {
+              "label": "Corn Salt and Pepper"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunan-chicken",
+      "category": "chinese",
+      "group": "Non-veg",
+      "name": "Hunan Chicken",
+      "description": "Tender chicken, aromatics and seasonings tossed in spicy Hunan-style chilli sauce.",
+      "descriptionSource": "menu",
+      "price": 499,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 8
+    },
+    {
+      "id": "prawns-chillys",
+      "category": "chinese",
+      "group": "Non-veg",
+      "name": "Prawns Chilly's",
+      "description": "Prawns, aromatics and seasonings tossed in a spicy, chilli-infused sauce.",
+      "descriptionSource": "menu",
+      "price": 699,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 8
+    },
+    {
+      "id": "fish-chillys",
+      "category": "chinese",
+      "group": "Non-veg",
+      "name": "Fish Chilly's",
+      "description": "Boneless fish cubes, aromatics and seasonings tossed in spicy chilli sauce.",
+      "descriptionSource": "menu",
+      "price": 569,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 8
+    },
+    {
+      "id": "lollipop",
+      "category": "chinese",
+      "group": "Non-veg",
+      "name": "Lollipop",
+      "description": "Indo-Chinese chicken wings frenched and shaped into classic lollipop-style bites.",
+      "descriptionSource": "menu",
+      "price": 449,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 8
+    },
+    {
+      "id": "drums-of-heaven",
+      "category": "chinese",
+      "group": "Non-veg",
+      "name": "Drums of Heaven",
+      "description": "Crispy chicken drumsticks tossed in a glossy sweet-spicy-tangy sauce.",
+      "descriptionSource": "menu",
+      "price": 529,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 8
+    },
+    {
+      "id": "three-paper-chillis-chicken",
+      "category": "chinese",
+      "group": "Non-veg",
+      "name": "Three Paper Chilli's",
+      "description": "Chicken, crispy honey, chicken 65 or dragon chicken.",
+      "descriptionSource": "options",
+      "price": 449,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "choice",
+          "label": "Choose one",
+          "required": true,
+          "choices": [
+            {
+              "label": "Chicken"
+            },
+            {
+              "label": "Crispy Honey"
+            },
+            {
+              "label": "Chicken 65"
+            },
+            {
+              "label": "Dragon Chicken"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "non-veg-momos",
+      "category": "chinese",
+      "group": "Non-veg",
+      "name": "Non Veg Momos",
+      "description": "Steamed, kurkure or tandoori.",
+      "descriptionSource": "options",
+      "price": 399,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "style",
+          "label": "Style",
+          "required": true,
+          "choices": [
+            {
+              "label": "Steamed"
+            },
+            {
+              "label": "Kurkure"
+            },
+            {
+              "label": "Tandoori"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "royale-rolls-chicken",
+      "category": "chinese",
+      "group": "Non-veg",
+      "name": "Royale Rolls",
+      "description": "Chicken spring roll or white pepper chicken roll.",
+      "descriptionSource": "options",
+      "price": 399,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 8,
+      "options": [
+        {
+          "id": "roll",
+          "label": "Roll",
+          "required": true,
+          "choices": [
+            {
+              "label": "Chicken Spring Roll"
+            },
+            {
+              "label": "White Pepper Chicken Roll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "minion-burger-veg",
+      "category": "continentals",
+      "group": "Veg",
+      "name": "Hazratgunj Minion Burger",
+      "description": "3 crispy veggie patty layered with cheese, lettuce and signature sauce.",
+      "descriptionSource": "menu",
+      "price": 399,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 14
+    },
+    {
+      "id": "cheese-salsa-garlic-bread",
+      "category": "continentals",
+      "group": "Veg",
+      "name": "Cheese Salsa Garlic Bread",
+      "description": "Toasted garlic bread topped with melted cheese and zesty salsa.",
+      "descriptionSource": "menu",
+      "price": 299,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 14
+    },
+    {
+      "id": "cheese-cigar-rolls",
+      "category": "continentals",
+      "group": "Veg",
+      "name": "Cheese Cigar Rolls",
+      "description": "Crispy cigar rolls filled with molten cheese and aromatic herbs.",
+      "descriptionSource": "menu",
+      "price": 399,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 14
+    },
+    {
+      "id": "classic-bruschetta",
+      "category": "continentals",
+      "group": "Veg",
+      "name": "Classic Bruschetta",
+      "description": "Toasted bread topped with fresh tomatoes, basil, garlic and olive oil.",
+      "descriptionSource": "menu",
+      "price": 399,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 14
+    },
+    {
+      "id": "cheese-ball-sticks",
+      "category": "continentals",
+      "group": "Veg",
+      "name": "Cheese Ball Sticks",
+      "description": "Crispy golden cheese sticks served with a delicious creamy dip.",
+      "descriptionSource": "menu",
+      "price": 399,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 14
+    },
+    {
+      "id": "cutlet-platter",
+      "category": "continentals",
+      "group": "Veg",
+      "name": "Cutlet Platter",
+      "description": "Assorted paneer, vegetable and cheese cutlets served with flavorful dips.",
+      "descriptionSource": "menu",
+      "price": 409,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 14
+    },
+    {
+      "id": "minion-burger-chicken",
+      "category": "continentals",
+      "group": "Non-veg",
+      "name": "Hazratgunj Minion Burger",
+      "description": "3 juicy chicken patty layered with cheese, lettuce and signature sauce.",
+      "descriptionSource": "menu",
+      "price": 419,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 14
+    },
+    {
+      "id": "cheesy-chicken-popcorn",
+      "category": "continentals",
+      "group": "Non-veg",
+      "name": "Cheesy Chicken Popcorn",
+      "description": "Crispy chicken bites coated with cheese and seasoned spices.",
+      "descriptionSource": "menu",
+      "price": 399,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 14
+    },
+    {
+      "id": "peri-peri-chicken-tender",
+      "category": "continentals",
+      "group": "Non-veg",
+      "name": "Peri Peri Chicken Tender",
+      "description": "Tender chicken pieces grilled with fiery peri peri seasoning and herbs.",
+      "descriptionSource": "menu",
+      "price": 409,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 14
+    },
+    {
+      "id": "dynamite-prawns",
+      "category": "continentals",
+      "group": "Non-veg",
+      "name": "Dynamite Prawns",
+      "description": "Crispy prawns tossed in creamy, spicy dynamite sauce for indulgence.",
+      "descriptionSource": "menu",
+      "price": 649,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 14
+    },
+    {
+      "id": "chicken-teriyaki",
+      "category": "continentals",
+      "group": "Non-veg",
+      "name": "Chicken Teriyaki",
+      "description": "Juicy chicken glazed with sweet, savoury teriyaki sauce and sesame.",
+      "descriptionSource": "menu",
+      "price": 429,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 14
+    },
+    {
+      "id": "cheesy-crunchy-breast",
+      "category": "continentals",
+      "group": "Non-veg",
+      "name": "Cheesy Crunchy Breast",
+      "description": "Crispy chicken breast stuffed with cheese, seasoned and fried golden.",
+      "descriptionSource": "menu",
+      "price": 509,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 14
+    },
+    {
+      "id": "peri-peri-fish-finger",
+      "category": "continentals",
+      "group": "Non-veg",
+      "name": "Peri Peri Fish Finger",
+      "description": "Crispy fish fingers seasoned with fiery peri peri spices and herbs.",
+      "descriptionSource": "menu",
+      "price": 469,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 14
+    },
+    {
+      "id": "green-garden-salad",
+      "category": "salads",
+      "name": "Green Garden Salad",
+      "description": "Fresh cucumber, tomatoes, onions and carrots served with lemon, chillies.",
+      "descriptionSource": "menu",
+      "price": 129,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 9
+    },
+    {
+      "id": "onion-salad",
+      "category": "salads",
+      "name": "Onion Salad",
+      "description": "Crisp onion rings served with fresh lemon slices and green chilli.",
+      "descriptionSource": "menu",
+      "price": 129,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 9
+    },
+    {
+      "id": "laccha-onion-salad",
+      "category": "salads",
+      "name": "Laccha Onion Salad",
+      "description": "Thinly sliced onions tossed with lemon, chaat masala, chilies, coriander.",
+      "descriptionSource": "menu",
+      "price": 149,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 9
+    },
+    {
+      "id": "caesar-salad",
+      "category": "salads",
+      "name": "Caesar Salad",
+      "description": "Crisp romaine, crunchy croutons and Parmesan tossed in Caesar dressing.",
+      "descriptionSource": "menu",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 9
+    },
+    {
+      "id": "paneer-khurchan",
+      "category": "mains-veg",
+      "group": "New Arrivals",
+      "name": "Paneer Khurchan",
+      "description": "Shredded paneer, onions and capsicum tossed in smoky spices.",
+      "descriptionSource": "menu",
+      "price": 599,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 18
+    },
+    {
+      "id": "paneer-ghee-roast",
+      "category": "mains-veg",
+      "group": "New Arrivals",
+      "name": "Paneer Ghee Roast",
+      "description": "Paneer roasted in ghee with fiery coastal spices and tanginess.",
+      "descriptionSource": "menu",
+      "price": 599,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 18
+    },
+    {
+      "id": "smokey-palak-bhutta",
+      "category": "mains-veg",
+      "group": "New Arrivals",
+      "name": "Smokey Palak Bhutta",
+      "description": "Velvety spinach and sweet corn combined with subtle smoky flavours.",
+      "descriptionSource": "menu",
+      "price": 559,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 18
+    },
+    {
+      "id": "tandoori-paneer-tikka-masala",
+      "category": "mains-veg",
+      "group": "Signatures",
+      "name": "Tandoori Paneer Tikka Masala",
+      "description": "Grilled paneer and peppers simmered in rich, spiced tomato gravy.",
+      "descriptionSource": "menu",
+      "price": 599,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "paneer-kaleji",
+      "category": "mains-veg",
+      "group": "Signatures",
+      "name": "Paneer Kaleji",
+      "description": "Paneer cooked kaleji-style with bold spices, onions and peppers.",
+      "descriptionSource": "menu",
+      "price": 599,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "signature-paneer-makkhan-wala",
+      "category": "mains-veg",
+      "group": "Signatures",
+      "name": "Signature Paneer Makkhan Wala",
+      "description": "Signature paneer cooked in rich, buttery tomato gravy with spices.",
+      "descriptionSource": "menu",
+      "price": 599,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 18
+    },
+    {
+      "id": "signature-paneer-makkhan-masala",
+      "category": "mains-veg",
+      "group": "Signatures",
+      "name": "Signature Paneer Makkhan Masala",
+      "description": "Soft paneer simmered in rich, buttery tomato gravy with aromatic Indian tadka.",
+      "descriptionSource": "menu",
+      "price": 599,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 18
+    },
+    {
+      "id": "signature-paneer-pandara-wala",
+      "category": "mains-veg",
+      "group": "Signatures",
+      "name": "Signature Paneer Pandara Wala",
+      "description": "Paneer cooked in tangy, spiced gravy inspired by Delhi's Pandara Street.",
+      "descriptionSource": "menu",
+      "price": 599,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 18
+    },
+    {
+      "id": "shaam-savera-kofta",
+      "category": "mains-veg",
+      "group": "Koftas",
+      "name": "Shaam Savera Kofta",
+      "description": "Spinach koftas with paneer centres served in velvety makhani gravy.",
+      "descriptionSource": "menu",
+      "price": 479,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "kesari-kofta",
+      "category": "mains-veg",
+      "group": "Koftas",
+      "name": "Kesari Kofta",
+      "description": "Delicate vegetable koftas enriched with fragrant saffron and creamy gravy.",
+      "descriptionSource": "menu",
+      "price": 479,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "malai-kofta",
+      "category": "mains-veg",
+      "group": "Koftas",
+      "name": "Malai Kofta",
+      "description": "Paneer and dry-fruit koftas served in rich, creamy gravy.",
+      "descriptionSource": "menu",
+      "price": 569,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "handi-paneer",
+      "category": "mains-veg",
+      "group": "Handi",
+      "name": "Handi Paneer",
+      "description": "Paneer simmered in creamy, mildly spiced handi gravy.",
+      "descriptionSource": "menu",
+      "price": 569,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "handi-mushroom",
+      "category": "mains-veg",
+      "group": "Handi",
+      "name": "Handi Mushroom",
+      "description": "Mushroom simmered in creamy, mildly spiced handi gravy.",
+      "descriptionSource": "menu",
+      "price": 569,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "aloo-gobhi-adrak-wali",
+      "category": "mains-veg",
+      "group": "Regulars",
+      "name": "Aloo Gobhi Adrak Wali",
+      "description": "Potatoes and cauliflower tossed with fresh ginger and aromatic spices.",
+      "descriptionSource": "menu",
+      "price": 429,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "aloo-dum-banarsi",
+      "category": "mains-veg",
+      "group": "Regulars",
+      "name": "Aloo Dum Banarsi",
+      "description": "Stuffed potatoes slow-cooked in a rich, aromatic Banarasi gravy.",
+      "descriptionSource": "menu",
+      "price": 499,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "punjabi-paneer",
+      "category": "mains-veg",
+      "group": "Regulars",
+      "name": "Punjabi Paneer",
+      "description": "Diced paneer simmered with aromatic whole spices in Punjabi style.",
+      "descriptionSource": "menu",
+      "price": 569,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "paneer-lababdaar",
+      "category": "mains-veg",
+      "group": "Regulars",
+      "name": "Paneer Lababdaar",
+      "description": "Soft paneer cubes simmered in creamy tomato, onion and cashew gravy.",
+      "descriptionSource": "menu",
+      "price": 599,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "subz-mili-juli",
+      "category": "mains-veg",
+      "group": "Regulars",
+      "name": "Subz Mili-Juli",
+      "description": "Assorted seasonal vegetables cooked together with aromatic Indian spices.",
+      "descriptionSource": "menu",
+      "price": 409,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "subz-handi",
+      "category": "mains-veg",
+      "group": "Regulars",
+      "name": "Subz Handi",
+      "description": "Mixed vegetables simmered in rich, mildly spiced traditional handi gravy.",
+      "descriptionSource": "menu",
+      "price": 409,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "aloo-chutney-wala",
+      "category": "mains-veg",
+      "group": "Regulars",
+      "name": "Aloo Chutney Wala",
+      "description": "Tender potatoes tossed in vibrant mint, coriander and spices.",
+      "descriptionSource": "menu",
+      "price": 399,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 18
+    },
+    {
+      "id": "murg-khurchan",
+      "category": "mains-nonveg",
+      "group": "New Arrivals",
+      "name": "Murg Khurchan",
+      "description": "Shredded boneless chicken tossed in spicy tangy semi-gravy preparation.",
+      "descriptionSource": "menu",
+      "price": 699,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 16
+    },
+    {
+      "id": "murg-ghee-roast",
+      "category": "mains-nonveg",
+      "group": "New Arrivals",
+      "name": "Murg Ghee Roast",
+      "description": "Fiery tangy chicken roasted in ghee with South Indian spices.",
+      "descriptionSource": "menu",
+      "price": 649,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 16
+    },
+    {
+      "id": "lucknowi-nehari",
+      "category": "mains-nonveg",
+      "group": "New Arrivals",
+      "name": "Lucknowi Nehari",
+      "description": "Slow-cooked tender mutton simmered in rich aromatic broth with Awadhi spices.",
+      "descriptionSource": "menu",
+      "price": 799,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 16
+    },
+    {
+      "id": "signature-murg-makkhan-wala",
+      "category": "mains-nonveg",
+      "group": "Signatures",
+      "name": "Signature Murg Makkhan Wala",
+      "description": "Char-grilled butter chicken simmered in creamy aromatic makhani gravy gently.",
+      "descriptionSource": "menu",
+      "price": 649,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 16,
+      "variants": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "price": 649,
+          "veg": false
+        },
+        {
+          "id": "boneless",
+          "label": "Boneless",
+          "price": 699,
+          "veg": false
+        }
+      ]
+    },
+    {
+      "id": "signature-murg-makkhan-masala",
+      "category": "mains-nonveg",
+      "group": "Signatures",
+      "name": "Signature Murg Makkhan Masala",
+      "description": "Specially curated butter chicken simmered in makhani gravy with spices.",
+      "descriptionSource": "menu",
+      "price": 649,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 16,
+      "variants": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "price": 649,
+          "veg": false
+        },
+        {
+          "id": "boneless",
+          "label": "Boneless",
+          "price": 699,
+          "veg": false
+        }
+      ]
+    },
+    {
+      "id": "signature-murg-pandara-wala",
+      "category": "mains-nonveg",
+      "group": "Signatures",
+      "name": "Signature Murg Pandara Wala",
+      "description": "Chicken cooked in tangy, spiced gravy inspired by Delhi's Pandara Street.",
+      "descriptionSource": "menu",
+      "price": 649,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 16,
+      "variants": [
+        {
+          "id": "regular",
+          "label": "Regular",
+          "price": 649,
+          "veg": false
+        },
+        {
+          "id": "boneless",
+          "label": "Boneless",
+          "price": 699,
+          "veg": false
+        }
+      ]
+    },
+    {
+      "id": "signature-hazratgunj-masaledaar-gosht",
+      "category": "mains-nonveg",
+      "group": "Signatures",
+      "name": "Signature Hazratgunj Masaledaar Gosht",
+      "description": "Fresh mutton cooked with aromatic spices, onions and tomatoes beautifully.",
+      "descriptionSource": "menu",
+      "price": 749,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 16
+    },
+    {
+      "id": "khade-masale-ka-bhuna-gosht",
+      "category": "mains-nonveg",
+      "group": "Gosht",
+      "name": "Khade Masale Ka Bhuna Gosht",
+      "description": "Tender mutton cooked with whole garam masala for deep flavour.",
+      "descriptionSource": "menu",
+      "price": 749,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "gosht-rogan-josh",
+      "category": "mains-nonveg",
+      "group": "Gosht",
+      "name": "Gosht Rogan Josh",
+      "description": "Tender mutton slow-cooked in vibrant Kashmiri red gravy with spices.",
+      "descriptionSource": "menu",
+      "price": 749,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "gosht-laal-maas",
+      "category": "mains-nonveg",
+      "group": "Gosht",
+      "name": "Gosht Laal Maas",
+      "description": "Tender mutton slow-cooked in vibrant Kashmiri red gravy with spices.",
+      "descriptionSource": "menu",
+      "price": 749,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "gosht-awadhi",
+      "category": "mains-nonveg",
+      "group": "Gosht",
+      "name": "Gosht Awadhi",
+      "description": "Mutton cooked Lucknowi-style with aromatic rice-infused gravy.",
+      "descriptionSource": "menu",
+      "price": 749,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "murg-awadhi",
+      "category": "mains-nonveg",
+      "group": "Murg",
+      "name": "Murg Awadhi",
+      "description": "Chicken cooked Lucknowi-style with aromatic rice-infused gravy.",
+      "descriptionSource": "menu",
+      "price": 649,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "daane-daar-rara-murg",
+      "category": "mains-nonveg",
+      "group": "Murg",
+      "name": "Daane Daar Rara Murg",
+      "description": "Punjabi chicken and minced chicken cooked together in thick spicy gravy.",
+      "descriptionSource": "menu",
+      "price": 699,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "tandoori-bhuna-murg",
+      "category": "mains-nonveg",
+      "group": "Murg",
+      "name": "Tandoori Bhuna Murg",
+      "description": "Tandoori chicken roasted and bhunna with spicy tangy Indian gravy.",
+      "descriptionSource": "menu",
+      "price": 649,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "khade-masale-ke-murg",
+      "category": "mains-nonveg",
+      "group": "Murg",
+      "name": "Khade Masale Ke Murg",
+      "description": "Chicken cooked with whole garam masala for aromatic rustic flavour.",
+      "descriptionSource": "menu",
+      "price": 629,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "dhaabe-da-kukkad",
+      "category": "mains-nonveg",
+      "group": "Murg",
+      "name": "Dhaabe Da Kukkad",
+      "description": "Rustic bone-in chicken cooked with whole spices onion tomato masala.",
+      "descriptionSource": "menu",
+      "price": 629,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 16
+    },
+    {
+      "id": "dal-fry",
+      "category": "dal",
+      "name": "Dal Fry",
+      "description": "Comforting yellow lentils tempered with aromatic spices for homestyle flavour.",
+      "descriptionSource": "menu",
+      "price": 389,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15
+    },
+    {
+      "id": "tadke-waali-dal",
+      "category": "dal",
+      "name": "Tadke Waali Dal",
+      "description": "Yellow lentils finished with sizzling ghee, spices and aromatic tempering.",
+      "descriptionSource": "menu",
+      "price": 409,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15
+    },
+    {
+      "id": "dal-makkhan-wali",
+      "category": "dal",
+      "name": "Dal Makkhan Wali",
+      "description": "Black lentils slow-cooked with tomato, butter, cream and Indian spices.",
+      "descriptionSource": "menu",
+      "price": 499,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15
+    },
+    {
+      "id": "signature-dal-hazratgunj",
+      "category": "dal",
+      "name": "Signature Dal Hazratgunj",
+      "description": "Overnight slow-cooked black lentils enriched with butter, cream and spices.",
+      "descriptionSource": "menu",
+      "price": 529,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 15
+    },
+    {
+      "id": "basmati-e-khaas",
+      "category": "rice",
+      "name": "Basmati-e-Khaas",
+      "description": "Steamed rice or jeera rice.",
+      "descriptionSource": "options",
+      "price": 299,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15,
+      "options": [
+        {
+          "id": "rice",
+          "label": "Rice",
+          "required": true,
+          "choices": [
+            {
+              "label": "Steamed Rice"
+            },
+            {
+              "label": "Jeera Rice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pulao-please",
+      "category": "rice",
+      "name": "Pulao Please",
+      "description": "Peas pulao or subz pulao.",
+      "descriptionSource": "options",
+      "price": 329,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15,
+      "options": [
+        {
+          "id": "pulao",
+          "label": "Pulao",
+          "required": true,
+          "choices": [
+            {
+              "label": "Peas Pulao"
+            },
+            {
+              "label": "Subz Pulao"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hazratgunj-subz-biryani",
+      "category": "rice",
+      "name": "Hazratgunj Subz Biryani",
+      "description": "Basmati rice layered with spiced vegetables.",
+      "descriptionSource": "written",
+      "price": 449,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 15
+    },
+    {
+      "id": "hazratgunj-murg-dum-biryani",
+      "category": "rice",
+      "name": "Hazratgunj Murg Dum Biryani",
+      "description": "Chicken and basmati rice slow-cooked on dum.",
+      "descriptionSource": "written",
+      "price": 499,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 15
+    },
+    {
+      "id": "murg-tikka-biryani",
+      "category": "rice",
+      "name": "Murg Tikka Biryani",
+      "description": "Biryani made with chicken tikka.",
+      "descriptionSource": "written",
+      "price": 549,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 15
+    },
+    {
+      "id": "gosht-biryani",
+      "category": "rice",
+      "name": "Gosht Biryani",
+      "description": "Mutton biryani with basmati rice.",
+      "descriptionSource": "written",
+      "price": 669,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 15
+    },
+    {
+      "id": "egg-biryani",
+      "category": "rice",
+      "name": "Egg Biryani",
+      "description": "Biryani with boiled eggs.",
+      "descriptionSource": "written",
+      "price": 469,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "egg"
+      ],
+      "page": 15
+    },
+    {
+      "id": "choice-of-roti",
+      "category": "breads",
+      "name": "Choice of Roti",
+      "description": "Plain roti, butter roti or roomali roti.",
+      "descriptionSource": "options",
+      "price": 89,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15,
+      "options": [
+        {
+          "id": "roti",
+          "label": "Roti",
+          "required": true,
+          "choices": [
+            {
+              "label": "Plain Roti"
+            },
+            {
+              "label": "Butter Roti"
+            },
+            {
+              "label": "Roomali Roti"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naan-naan",
+      "category": "breads",
+      "name": "Naan Naan",
+      "description": "Plain naan, butter naan or garlic naan.",
+      "descriptionSource": "options",
+      "price": 129,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15,
+      "options": [
+        {
+          "id": "naan",
+          "label": "Naan",
+          "required": true,
+          "choices": [
+            {
+              "label": "Plain Naan"
+            },
+            {
+              "label": "Butter Naan"
+            },
+            {
+              "label": "Garlic Naan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kulche",
+      "category": "breads",
+      "name": "Kulche",
+      "description": "Onion, aloo, paneer, mixed or Amritsari.",
+      "descriptionSource": "options",
+      "price": 149,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15,
+      "options": [
+        {
+          "id": "filling",
+          "label": "Filling",
+          "required": true,
+          "choices": [
+            {
+              "label": "Onion"
+            },
+            {
+              "label": "Aloo"
+            },
+            {
+              "label": "Paneer"
+            },
+            {
+              "label": "Mixed"
+            },
+            {
+              "label": "Amritsari"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parathe",
+      "category": "breads",
+      "name": "Parathe",
+      "description": "Lachha, mirchi or pudina.",
+      "descriptionSource": "options",
+      "price": 129,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15,
+      "options": [
+        {
+          "id": "style",
+          "label": "Paratha",
+          "required": true,
+          "choices": [
+            {
+              "label": "Lachha"
+            },
+            {
+              "label": "Mirchi"
+            },
+            {
+              "label": "Pudina"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missi-roti",
+      "category": "breads",
+      "name": "Missi Roti",
+      "description": "Spiced gram-flour flatbread.",
+      "descriptionSource": "written",
+      "price": 129,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15
+    },
+    {
+      "id": "cheese-garlic-naan",
+      "category": "breads",
+      "name": "Cheese Garlic Naan",
+      "description": "Naan with cheese and garlic.",
+      "descriptionSource": "written",
+      "price": 149,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 15
+    },
+    {
+      "id": "hazratgunj-bread-basket",
+      "category": "breads",
+      "name": "Hazratgunj Bread Basket",
+      "description": "Comes with roti, lachha, naan, missi and kulcha.",
+      "descriptionSource": "menu",
+      "price": 549,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 15
+    },
+    {
+      "id": "fried-rice",
+      "category": "noodles",
+      "name": "Fried Rice",
+      "description": "Aromatic wok-tossed rice with crisp veggies and your choice flavour.",
+      "descriptionSource": "menu",
+      "price": 369,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 6,
+      "variants": [
+        {
+          "id": "veg",
+          "label": "Veg",
+          "price": 369,
+          "veg": true
+        },
+        {
+          "id": "chicken",
+          "label": "Chicken",
+          "price": 399,
+          "veg": false
+        },
+        {
+          "id": "prawns",
+          "label": "Prawns",
+          "price": 509,
+          "veg": false
+        },
+        {
+          "id": "mixed",
+          "label": "Mixed",
+          "price": 559,
+          "veg": false
+        }
+      ]
+    },
+    {
+      "id": "hakka-noodles",
+      "category": "noodles",
+      "name": "Hakka Noodles",
+      "description": "Classic wok-tossed noodles with crisp veggies and your choice flavour.",
+      "descriptionSource": "menu",
+      "price": 369,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 6,
+      "variants": [
+        {
+          "id": "veg",
+          "label": "Veg",
+          "price": 369,
+          "veg": true
+        },
+        {
+          "id": "chicken",
+          "label": "Chicken",
+          "price": 399,
+          "veg": false
+        },
+        {
+          "id": "prawns",
+          "label": "Prawns",
+          "price": 509,
+          "veg": false
+        },
+        {
+          "id": "mixed",
+          "label": "Mixed",
+          "price": 559,
+          "veg": false
+        }
+      ]
+    },
+    {
+      "id": "schezwan-noodles",
+      "category": "noodles",
+      "name": "Schezwan Noodles",
+      "description": "Spicy and bold Schezwan flavours tossed with veggies.",
+      "descriptionSource": "menu",
+      "price": 369,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 6,
+      "variants": [
+        {
+          "id": "veg",
+          "label": "Veg",
+          "price": 369,
+          "veg": true
+        },
+        {
+          "id": "chicken",
+          "label": "Chicken",
+          "price": 399,
+          "veg": false
+        },
+        {
+          "id": "prawns",
+          "label": "Prawns",
+          "price": 509,
+          "veg": false
+        },
+        {
+          "id": "mixed",
+          "label": "Mixed",
+          "price": 559,
+          "veg": false
+        }
+      ]
+    },
+    {
+      "id": "chilly-garlic-noodles",
+      "category": "noodles",
+      "name": "Chilly Garlic Noodles",
+      "description": "Wok-tossed noodles with garlic, chilli and spring onion.",
+      "descriptionSource": "menu",
+      "price": 369,
+      "veg": false,
+      "image": null,
+      "tags": [],
+      "page": 6,
+      "variants": [
+        {
+          "id": "veg",
+          "label": "Veg",
+          "price": 369,
+          "veg": true
+        },
+        {
+          "id": "chicken",
+          "label": "Chicken",
+          "price": 399,
+          "veg": false
+        },
+        {
+          "id": "prawns",
+          "label": "Prawns",
+          "price": 509,
+          "veg": false
+        },
+        {
+          "id": "mixed",
+          "label": "Mixed",
+          "price": 559,
+          "veg": false
+        }
+      ]
+    },
+    {
+      "id": "craft-your-own-pasta",
+      "category": "pasta",
+      "name": "Craft Your Own Pasta",
+      "description": "Choose your pasta and sauce, then add extras if you like.",
+      "descriptionSource": "options",
+      "price": 409,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 6,
+      "variants": [
+        {
+          "id": "veg",
+          "label": "Veg",
+          "price": 409,
+          "veg": true
+        },
+        {
+          "id": "non-veg",
+          "label": "Non-veg",
+          "price": 449,
+          "veg": false
+        }
+      ],
+      "options": [
+        {
+          "id": "pasta",
+          "label": "Pasta",
+          "required": true,
+          "choices": [
+            {
+              "label": "Spaghetti"
+            },
+            {
+              "label": "Penne"
+            },
+            {
+              "label": "Fettuccine"
+            }
+          ]
+        },
+        {
+          "id": "sauce",
+          "label": "Sauce",
+          "required": true,
+          "choices": [
+            {
+              "label": "Red Sauce"
+            },
+            {
+              "label": "White Sauce"
+            },
+            {
+              "label": "Makhani Sauce"
+            },
+            {
+              "label": "Mix Sauce"
+            }
+          ]
+        },
+        {
+          "id": "extra",
+          "label": "Extra proteins or veggies",
+          "required": false,
+          "choices": [
+            {
+              "label": "Veggies",
+              "price": 89
+            },
+            {
+              "label": "Chicken",
+              "price": 89,
+              "veg": false
+            }
+          ]
+        },
+        {
+          "id": "cheese",
+          "label": "Cheesy cravings",
+          "required": false,
+          "choices": [
+            {
+              "label": "Cheese",
+              "price": 59
+            },
+            {
+              "label": "Double Cheese",
+              "price": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veg-pizza",
+      "category": "pizzeria",
+      "name": "Veg Pizza",
+      "description": "Paneer chilly, mushroom chilly or margherita.",
+      "descriptionSource": "options",
+      "price": 329,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 9,
+      "options": [
+        {
+          "id": "flavour",
+          "label": "Pizza",
+          "required": true,
+          "choices": [
+            {
+              "label": "Paneer Chilly"
+            },
+            {
+              "label": "Mushroom Chilly"
+            },
+            {
+              "label": "Margherita"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "non-veg-pizza",
+      "category": "pizzeria",
+      "name": "Non-Veg Pizza",
+      "description": "Chicken chilly, chicken tikka or prawns chilly.",
+      "descriptionSource": "options",
+      "price": 379,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 9,
+      "options": [
+        {
+          "id": "flavour",
+          "label": "Pizza",
+          "required": true,
+          "choices": [
+            {
+              "label": "Chicken Chilly"
+            },
+            {
+              "label": "Chicken Tikka"
+            },
+            {
+              "label": "Prawns Chilly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sandwich",
+      "category": "sandwiches",
+      "name": "Sandwich",
+      "description": "Club, grilled or jungle marble, veg or non-veg.",
+      "descriptionSource": "options",
+      "price": 349,
+      "veg": false,
+      "image": null,
+      "tags": [
+        "bestseller"
+      ],
+      "page": 9,
+      "variants": [
+        {
+          "id": "veg",
+          "label": "Veg",
+          "price": 349,
+          "veg": true
+        },
+        {
+          "id": "non-veg",
+          "label": "Non-veg",
+          "price": 399,
+          "veg": false
+        }
+      ],
+      "options": [
+        {
+          "id": "style",
+          "label": "Sandwich",
+          "required": true,
+          "choices": [
+            {
+              "label": "Club"
+            },
+            {
+              "label": "Grilled"
+            },
+            {
+              "label": "Jungle Marble"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "masala-pappad",
+      "category": "sides",
+      "name": "Masala Pappad",
+      "description": "Roasted papad topped with onion, tomato and spices.",
+      "descriptionSource": "written",
+      "price": 129,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "masala-peanut",
+      "category": "sides",
+      "name": "Masala Peanut",
+      "description": "Peanuts tossed with onion, tomato, chilli and lemon.",
+      "descriptionSource": "written",
+      "price": 149,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "cucumber-raita",
+      "category": "sides",
+      "name": "Cucumber Raita",
+      "description": "Chilled yoghurt with cucumber.",
+      "descriptionSource": "written",
+      "price": 149,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "boondi-raita",
+      "category": "sides",
+      "name": "Boondi Raita",
+      "description": "Chilled yoghurt with boondi.",
+      "descriptionSource": "written",
+      "price": 149,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "mix-veg-raita",
+      "category": "sides",
+      "name": "Mix Veg Raita",
+      "description": "Chilled yoghurt with mixed vegetables.",
+      "descriptionSource": "written",
+      "price": 169,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "pineapple-raita",
+      "category": "sides",
+      "name": "Pineapple Raita",
+      "description": "Chilled yoghurt with pineapple.",
+      "descriptionSource": "written",
+      "price": 179,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "fruit-raita",
+      "category": "sides",
+      "name": "Fruit Raita",
+      "description": "Chilled yoghurt with mixed fruit.",
+      "descriptionSource": "written",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "french-fries",
+      "category": "sides",
+      "name": "French Fries",
+      "description": "Salted potato fries.",
+      "descriptionSource": "written",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "peri-peri-fries",
+      "category": "sides",
+      "name": "Peri Peri Fries",
+      "description": "Potato fries tossed in peri peri seasoning.",
+      "descriptionSource": "written",
+      "price": 209,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "gulaab-jaamun-with-rabri",
+      "category": "desserts",
+      "name": "Gulaab Jaamun with Rabri",
+      "description": "Warm gulab jamuns served with rich, chilled, creamy rabadi.",
+      "descriptionSource": "menu",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "kesari-jalebi-with-rabri",
+      "category": "desserts",
+      "name": "Kesari Jalebi with Rabri",
+      "description": "Crisp jalebi paired with creamy rabadi for irresistible sweetness.",
+      "descriptionSource": "menu",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "gajar-da-halwa",
+      "category": "desserts",
+      "name": "Gajar Da Halwa",
+      "description": "Seasonal carrots slow-cooked with milk, sugar, ghee and nuts.",
+      "descriptionSource": "menu",
+      "price": 209,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "seasonal"
+      ],
+      "page": 5
+    },
+    {
+      "id": "moong-di-dal-da-halwa",
+      "category": "desserts",
+      "name": "Moong Di Dal Da Halwa",
+      "description": "Rich moong dal halwa slow-cooked with ghee, milk and nuts.",
+      "descriptionSource": "menu",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "sizzling-brownie-with-ice-cream",
+      "category": "desserts",
+      "name": "Sizzling Brownie with Ice Cream",
+      "description": "Warm chocolate brownie served sizzling with creamy vanilla ice cream.",
+      "descriptionSource": "menu",
+      "price": 299,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "signature-shahi-tukda",
+      "category": "desserts",
+      "name": "Signature Shahi Tukda",
+      "description": "Golden bread soaked in fragrant milk, topped with nuts and saffron.",
+      "descriptionSource": "menu",
+      "price": 229,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 5
+    },
+    {
+      "id": "signature-shahi-kunafa",
+      "category": "desserts",
+      "name": "Signature Shahi Kunafa",
+      "description": "Crisp kunafa layered with creamy filling, nuts and fragrant saffron.",
+      "descriptionSource": "menu",
+      "price": 499,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "signature"
+      ],
+      "page": 5
+    },
+    {
+      "id": "meethe-da-platter",
+      "category": "desserts",
+      "name": "Meethe Da Platter",
+      "description": "Platter consists two hot, two cold desserts and one chef's special delight.",
+      "descriptionSource": "menu",
+      "price": 499,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 5
+    },
+    {
+      "id": "bartenders-special",
+      "category": "refreshers",
+      "name": "Bartender's Special",
+      "description": "Lychee delight, imli aunty or virgin pinacolada.",
+      "descriptionSource": "options",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 7,
+      "options": [
+        {
+          "id": "drink",
+          "label": "Drink",
+          "required": true,
+          "choices": [
+            {
+              "label": "Lychee Delight"
+            },
+            {
+              "label": "Imli Aunty"
+            },
+            {
+              "label": "Virgin Pinacolada"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heritage-refreshers",
+      "category": "refreshers",
+      "name": "Heritage Refreshers",
+      "description": "Shikanji, jaljeera, aampanna or kaala-khatta.",
+      "descriptionSource": "options",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 7,
+      "options": [
+        {
+          "id": "drink",
+          "label": "Drink",
+          "required": true,
+          "choices": [
+            {
+              "label": "Shikanji"
+            },
+            {
+              "label": "Jaljeera"
+            },
+            {
+              "label": "Aampanna"
+            },
+            {
+              "label": "Kaala-Khatta"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lemonade",
+      "category": "refreshers",
+      "name": "Lemonade",
+      "description": "Brazilian, watermelon, pineapple or apple.",
+      "descriptionSource": "options",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 7,
+      "options": [
+        {
+          "id": "flavour",
+          "label": "Flavour",
+          "required": true,
+          "choices": [
+            {
+              "label": "Brazilian"
+            },
+            {
+              "label": "Watermelon"
+            },
+            {
+              "label": "Pineapple"
+            },
+            {
+              "label": "Apple"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "virgin-mojito",
+      "category": "refreshers",
+      "name": "Virgin Mojito",
+      "description": "Mint, green apple, watermelon or orange.",
+      "descriptionSource": "options",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 7,
+      "options": [
+        {
+          "id": "flavour",
+          "label": "Flavour",
+          "required": true,
+          "choices": [
+            {
+              "label": "Mint"
+            },
+            {
+              "label": "Green Apple"
+            },
+            {
+              "label": "Watermelon"
+            },
+            {
+              "label": "Orange"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lime-cooler",
+      "category": "refreshers",
+      "name": "Lime Cooler",
+      "description": "Sweet, salty or mix.",
+      "descriptionSource": "options",
+      "price": 249,
+      "veg": true,
+      "image": null,
+      "tags": [
+        "new"
+      ],
+      "page": 7,
+      "options": [
+        {
+          "id": "style",
+          "label": "Style",
+          "required": true,
+          "choices": [
+            {
+              "label": "Sweet"
+            },
+            {
+              "label": "Salty"
+            },
+            {
+              "label": "Mix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flavoured-milkshakes",
+      "category": "creamery",
+      "name": "Flavoured Milkshakes",
+      "description": "Oreo, KitKat, chocolate, vanilla, strawberry or mix fruit.",
+      "descriptionSource": "options",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 7,
+      "options": [
+        {
+          "id": "flavour",
+          "label": "Flavour",
+          "required": true,
+          "choices": [
+            {
+              "label": "Oreo"
+            },
+            {
+              "label": "KitKat"
+            },
+            {
+              "label": "Chocolate"
+            },
+            {
+              "label": "Vanilla"
+            },
+            {
+              "label": "Strawberry"
+            },
+            {
+              "label": "Mix Fruit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classic-chai",
+      "category": "creamery",
+      "name": "Classic Chai",
+      "description": "Kadak, masala or ginger.",
+      "descriptionSource": "options",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 7,
+      "options": [
+        {
+          "id": "style",
+          "label": "Chai",
+          "required": true,
+          "choices": [
+            {
+              "label": "Kadak"
+            },
+            {
+              "label": "Masala"
+            },
+            {
+              "label": "Ginger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cold-coffee",
+      "category": "creamery",
+      "name": "Cold Coffee",
+      "description": "With an optional scoop of vanilla, chocolate or coffee ice cream.",
+      "descriptionSource": "options",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 7,
+      "options": [
+        {
+          "id": "ice-cream",
+          "label": "Ice-cream add-on",
+          "required": false,
+          "choices": [
+            {
+              "label": "Vanilla"
+            },
+            {
+              "label": "Chocolate"
+            },
+            {
+              "label": "Coffee"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hot-coffee",
+      "category": "creamery",
+      "name": "Hot Coffee",
+      "description": "Café latte, black coffee or homemade coffee.",
+      "descriptionSource": "options",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 7,
+      "options": [
+        {
+          "id": "coffee",
+          "label": "Coffee",
+          "required": true,
+          "choices": [
+            {
+              "label": "Café Latte"
+            },
+            {
+              "label": "Black Coffee"
+            },
+            {
+              "label": "Homemade Coffee"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heritage-special",
+      "category": "creamery",
+      "name": "Heritage Special",
+      "description": "Lassi (sweet or salted), chaas or royalé mishrambu.",
+      "descriptionSource": "options",
+      "price": 199,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 7,
+      "options": [
+        {
+          "id": "drink",
+          "label": "Drink",
+          "required": true,
+          "choices": [
+            {
+              "label": "Sweet Lassi"
+            },
+            {
+              "label": "Salted Lassi"
+            },
+            {
+              "label": "Chaas"
+            },
+            {
+              "label": "Royalé Mishrambu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soft-drinks",
+      "category": "creamery",
+      "group": "At MRP",
+      "name": "Soft Drinks",
+      "description": "Coke, Thums Up, Sprite or Fanta.",
+      "descriptionSource": "options",
+      "price": null,
+      "priceLabel": "MRP",
+      "orderable": false,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 7
+    },
+    {
+      "id": "diet-refreshments",
+      "category": "creamery",
+      "group": "At MRP",
+      "name": "Diet Refreshments",
+      "description": "Diet Coke or Pepsi Zero.",
+      "descriptionSource": "options",
+      "price": null,
+      "priceLabel": "MRP",
+      "orderable": false,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 7
+    },
+    {
+      "id": "mineral-water",
+      "category": "creamery",
+      "group": "At MRP",
+      "name": "Mineral Water",
+      "description": "Packaged drinking water.",
+      "descriptionSource": "written",
+      "price": null,
+      "priceLabel": "MRP",
+      "orderable": false,
+      "veg": true,
+      "image": null,
+      "tags": [],
+      "page": 7
+    }
+  ]
+}

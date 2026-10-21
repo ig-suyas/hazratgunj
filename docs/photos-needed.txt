@@ -1,0 +1,17 @@
+ROOM PHOTOS FOR THE HAZRATGUNJ SITE
+
+Food photos: see docs/food-photos-needed.txt.
+
+ROOMS (landing page). Empty rooms only: no guests or staff anywhere in the frame,
+not even in the background or through a doorway. Upright (portrait), straight from
+the phone camera rather than sent through WhatsApp, 1600 px or larger on the long side.
+Then run:  npm run build:photos
+Needed (the current shots of these rooms show people, so they are not used).
+Put them in a folder, name them as below, and send me the path:
+hall-wide.jpg — the main dining hall, wide, from the arch looking in, tables set
+arch-doorway.jpg — the scalloped mustard arch straight on, the empty hall behind it
+Optional (better versions of shots already on the site, or a room with no photo yet):
+balcony-wide.jpg — the Balcony seating, wide
+box-office.jpg — the Box Office, larger original of the photo already used
+pavilion.jpg — the Pavilion, upright, larger original
+lobby.jpg — the lobby with the प्रणाम गोरखपुर sign, larger original

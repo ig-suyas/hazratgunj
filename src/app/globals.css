@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Hazratgunj design tokens: warm, light, refined.
+   Every colour, font, radius, shadow and motion value used by the site is
+   defined here; components only reference these variables.
+   Palette from the client's brief, checked against the venue photos (mustard
+   walls #C6923C, brass stanchions, green leather #40534B).
+   Contrast ratios are against cream (#F6F0E4). Full table: docs/design.md
+   ========================================================================== */
+
+@theme static {
+  /* Grounds */
+  --color-paper: #fbf8f2; /* warm white: page background */
+  --color-cream: #f6f0e4; /* menu background, walls */
+  --color-beige: #e8dcc6; /* cards, sheets */
+  --color-sand: #d9c8a8; /* dividers, borders */
+
+  /* Accents: lines and ornament only, never small text */
+  --color-brass: #b08d4f; /* hairlines, frames (2.7:1) */
+  --color-mustard: #c9a24b; /* highlights */
+  --color-brass-ink: #7a5e2c; /* brass-coloured text (5.3:1) */
+
+  /* Ink */
+  --color-charcoal: #2a2420; /* body text, prices (13.5:1) */
+  --color-muted: #5e5348; /* secondary text (6.6:1; 5.5:1 on beige) */
+  --color-bottle: #2f3e34; /* primary buttons, key text (10:1) */
+  --color-bottle-deep: #243029; /* pressed state */
+
+  /* Overlays */
+  --color-scrim: rgb(42 36 32 / 0.45); /* behind open sheets */
+  --color-veil: rgb(251 248 242 / 0.94); /* text cards over photos */
+  --color-photo-scrim: rgb(24 18 14 / 0.62); /* flat, over the hero photo: paper text stays AA */
+
+  /* Food marks (FSSAI) */
+  --color-veg: #1a7f37;
+  --color-nonveg: #8b3a0e;
+
+  /* Type scale */
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1.25;
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1.2;
+  --text-eyebrow--letter-spacing: 0.2em;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.45;
+  --text-base: 1rem;
+  --text-base--line-height: 1.6;
+  --text-item: 1.0625rem;
+  --text-item--line-height: 1.3;
+  --text-lead: 1.5rem;
+  --text-lead--line-height: 1.25;
+  --text-title: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  --text-title--line-height: 1.15;
+  --text-headline: clamp(2.25rem, 1.4rem + 3.6vw, 4rem);
+  --text-headline--line-height: 1.05;
+  --text-display: clamp(3rem, 1.2rem + 7vw, 6.5rem);
+  --text-display--line-height: 1;
+  --text-placeholder: clamp(0.85rem, 9cqi, 1.6rem); /* dish name inside a placeholder tile */
+  --text-placeholder--line-height: 1.15;
+  --text-monogram: 30cqi; /* initial inside a menu thumbnail */
+  --leading-deva: 1.45; /* room for anusvara above and nukta below */
+
+  /* Spacing */
+  --spacing-gutter: clamp(1rem, 4vw, 2.5rem);
+  --spacing-section: clamp(4.5rem, 11vw, 9rem);
+  --spacing-tap: 3rem; /* 48px minimum touch target */
+
+  /* Radius */
+  --radius-xs: 0.1875rem;
+  --radius-thumb: 0.75rem;
+  --radius-card: 1rem;
+  --radius-sheet: 1.5rem;
+  --radius-pill: 9999px;
+
+  /* Elevation: soft and warm */
+  --shadow-card: 0 1px 2px rgb(42 36 32 / 0.05), 0 8px 24px -14px rgb(42 36 32 / 0.22);
+  --shadow-raised: 0 2px 6px rgb(42 36 32 / 0.06), 0 18px 40px -20px rgb(42 36 32 / 0.3);
+  --shadow-sheet: 0 -12px 40px -16px rgb(42 36 32 / 0.35);
+  --shadow-ring: inset 0 0 0 1px var(--color-bottle);
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-sheet: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@theme inline {
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-deva: var(--font-tiro), "Tiro Devanagari Hindi", "Noto Serif Devanagari", serif;
+  --font-sans: var(--font-mukta), system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  /* Durations (JS mirrors these in src/design/motion.ts) */
+  --dur-tap: 120ms;
+  --dur-ui: 220ms;
+  --dur-fade: 300ms;
+  --dur-sheet: 380ms;
+  --dur-reveal: 900ms;
+
+  /* Logo colours. scripts/build-logo.mjs re-mixes the client's logo from
+     these three (black → dark, red → accent, white → light), then
+     `npm run build:brand` regenerates public/svg/logo-theme.svg and the WebPs.
+     Set to the original #000000 / #ff0000 / #ffffff, so the logo is used
+     exactly as given (no re-mix). */
+  --logo-dark: #000000;
+  --logo-accent: #ff0000;
+  --logo-light: #ffffff;
+
+  /* Checkerboard: two soft tones, low contrast */
+  --checker-a: var(--color-cream);
+  --checker-b: var(--color-sand);
+
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-bottle);
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: var(--color-sand);
+    color: var(--color-charcoal);
+  }
+}
+
+/* --- Motifs (use lightly) ------------------------------------------------ */
+
+/* Pointed arch (src/design/arch.ts) as a mask for large images. */
+@utility mask-arch {
+  -webkit-mask: url("/brand/arch.svg") center / 100% 100% no-repeat;
+  mask: url("/brand/arch.svg") center / 100% 100% no-repeat;
+}
+
+/* Checkerboard strip in two soft tones: a border, never a loud fill.
+   Height sets the tile size: a 6px strip gives 6px tiles. */
+@utility checker-rule {
+  height: var(--checker, 6px);
+  background: repeating-conic-gradient(var(--checker-b) 0 25%, var(--checker-a) 0 50%) 0 0 /
+    calc(var(--checker, 6px) * 2) calc(var(--checker, 6px) * 2);
+}
+
+/* Very faint checkerboard background, for large quiet surfaces. */
+@utility checker-field {
+  background: repeating-conic-gradient(var(--checker-b) 0 25%, transparent 0 50%) 0 0 /
+    calc(var(--checker, 2rem) * 2) calc(var(--checker, 2rem) * 2);
+  opacity: 0.35;
+}
+
+/* Brass hairline. */
+@utility hairline {
+  height: 1px;
+  background: var(--color-brass);
+}
+
+/* Prices, times, table numbers and quantities: always Mukta with lining,
+   tabular figures. (Cormorant from Google Fonts only has old-style digits,
+   which make "11" read like "ıı".) */
+@utility tabular {
+  font-family: var(--font-sans);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

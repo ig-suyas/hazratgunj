@@ -1,0 +1,10 @@
+# Not needed to build or serve the site
+assets/source
+docs/screens
+public/images
+public/image
+*.log
+.env*
+.next
+tsconfig.tsbuildinfo
+parked

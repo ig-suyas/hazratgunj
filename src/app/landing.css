@@ -1,0 +1,290 @@
+/* Landing page (src/app/page.tsx, src/components/landing/).
+   Values come from the tokens in globals.css. Spacing follows the 8px scale;
+   sections use py-16 (64px) on phones and py-24 (96px) from tablets up, all
+   inside one max-w-6xl container. The page scrolls natively: nothing is
+   pinned, snapped or scroll-driven except a slight parallax on the hero photo. */
+
+/* --- Links and buttons -----------------------------------------------------
+   One button (deep green, cream text; .lp-btn-on-dark inverts it on the green
+   section) and one text link with an animated underline. */
+.lp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding-inline: 1.5rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-bottle);
+  color: var(--color-paper);
+  font-weight: 600;
+  transition:
+    background-color var(--dur-ui) ease,
+    translate var(--dur-tap) ease;
+}
+.lp-btn:hover {
+  background: var(--color-bottle-deep);
+}
+.lp-btn:active {
+  translate: 0 1px;
+}
+.lp-btn:focus-visible {
+  outline: none;
+  /* Two rings, so focus shows on cream, on green and over the photo. */
+  box-shadow:
+    0 0 0 2px var(--color-paper),
+    0 0 0 4px var(--color-bottle);
+}
+.lp-btn-on-dark {
+  background: var(--color-paper);
+  color: var(--color-bottle);
+}
+.lp-btn-on-dark:hover {
+  background: var(--color-cream);
+}
+.lp-btn-on-dark:focus-visible {
+  box-shadow:
+    0 0 0 2px var(--color-bottle),
+    0 0 0 4px var(--color-paper);
+}
+
+.lp-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  color: var(--color-bottle);
+  font-weight: 600;
+}
+/* Resting underline, then a full-strength one that draws in on hover. */
+.lp-link::before,
+.lp-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0.625rem;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+}
+.lp-link::before {
+  opacity: 0.35;
+}
+.lp-link::after {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-ui) var(--ease-out-expo);
+}
+.lp-link:hover::after,
+.lp-link:focus-visible::after {
+  transform: scaleX(1);
+}
+.lp-link > span[aria-hidden] {
+  transition: translate var(--dur-ui) var(--ease-out-expo);
+}
+.lp-link:hover > span[aria-hidden] {
+  translate: 4px 0;
+}
+.lp-link:active {
+  opacity: 0.8;
+}
+.lp-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: var(--radius-xs);
+}
+.lp-link-on-dark {
+  color: var(--color-paper);
+}
+
+/* --- Header ----------------------------------------------------------------
+   Fixed and slim. Transparent over the hero photo; solid cream with a
+   hairline once the page has scrolled (site-header.tsx sets data-solid). */
+.lp-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 40;
+  height: 4.5rem;
+  padding-top: env(safe-area-inset-top);
+  box-sizing: content-box;
+  border-bottom: 1px solid transparent;
+  transition:
+    background-color var(--dur-ui) ease,
+    border-color var(--dur-ui) ease;
+}
+@media (min-width: 48rem) {
+  .lp-header {
+    height: 5rem;
+  }
+}
+.lp-header[data-solid="true"] {
+  background: var(--color-cream);
+  border-bottom-color: var(--color-sand);
+}
+.lp-header-menu {
+  color: var(--color-paper);
+  transition: color var(--dur-ui) ease;
+}
+.lp-header[data-solid="true"] .lp-header-menu {
+  color: var(--color-bottle);
+}
+
+/* --- Hero ------------------------------------------------------------------ */
+.lp-hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 88svh;
+  min-height: 34rem;
+  overflow: hidden;
+  background: var(--color-charcoal);
+  color: var(--color-paper);
+}
+/* Wide screens: the wide photo (960 × 500) at its own shape, so the whole
+   room shows; capped at the screen height. */
+@media (min-width: 48rem) {
+  .lp-hero {
+    height: min(52.1vw, 100svh);
+  }
+  .lp-hero .lp-hero-img {
+    object-position: 50% 50%;
+  }
+}
+.lp-hero-media {
+  position: absolute;
+  inset: 0;
+}
+.lp-hero-img {
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.lp-hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: var(--color-photo-scrim);
+}
+.lp-hero-content {
+  position: relative;
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding: 0 var(--spacing-gutter) 3rem;
+}
+@media (min-width: 48rem) {
+  .lp-hero-content {
+    padding-bottom: 5rem;
+  }
+}
+.lp-wordmark {
+  display: block;
+  font-family: var(--font-deva);
+  font-size: clamp(3.5rem, 2.2rem + 9vw, 7rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+/* Gentle parallax: the photo drifts down a little as the hero scrolls away.
+   Runs on the compositor; it never holds or delays the scroll. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .lp-hero-media {
+      animation: lp-parallax linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 90svh;
+    }
+  }
+}
+@keyframes lp-parallax {
+  to {
+    transform: translateY(8%);
+  }
+}
+
+/* --- Intro facts: one row, brass hairlines between ------------------------ */
+.lp-facts {
+  display: grid;
+  border-block: 1px solid var(--color-sand);
+}
+.lp-facts > li {
+  padding-block: 0.75rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.lp-facts > li + li {
+  border-top: 1px solid var(--color-brass);
+}
+@media (min-width: 40rem) {
+  .lp-facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lp-facts > li {
+    padding: 1rem;
+  }
+  .lp-facts > li:first-child {
+    padding-left: 0;
+  }
+  .lp-facts > li + li {
+    border-top: 0;
+    border-left: 1px solid var(--color-brass);
+  }
+}
+
+/* --- Spaces ----------------------------------------------------------------
+   Phones: a swipeable row of photos, the next one peeking in.
+   Tablets and up: an asymmetric grid, the first room large on the left. */
+.lp-spaces {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-inline: var(--spacing-gutter);
+  scroll-padding-inline: var(--spacing-gutter);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.lp-spaces::-webkit-scrollbar {
+  display: none;
+}
+.lp-spaces > li {
+  flex: 0 0 min(80vw, 22rem);
+  scroll-snap-align: start;
+}
+.lp-space-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--color-beige);
+}
+@media (min-width: 48rem) {
+  .lp-spaces {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 2rem;
+    max-width: 72rem;
+    margin-inline: auto;
+    padding-inline: 0;
+    overflow: visible;
+  }
+  .lp-spaces > li:first-child {
+    grid-row: span 2;
+  }
+  .lp-spaces > li:first-child .lp-space-media {
+    flex: 1;
+    aspect-ratio: auto;
+    min-height: 24rem;
+  }
+  .lp-spaces > li:not(:first-child) .lp-space-media {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+/* --- Reveal: fade and a 20px rise, once, 600ms (reveal.tsx) --------------- */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    transition:
+      opacity 600ms var(--ease-out-expo),
+      translate 600ms var(--ease-out-expo);
+  }
+  html[data-reveal="on"] [data-reveal]:not([data-shown]) {
+    opacity: 0;
+    translate: 0 20px;
+  }
+}

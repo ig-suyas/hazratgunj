@@ -16,12 +16,14 @@ export const mukta = Mukta({
   display: "swap",
 });
 
-// Devanagari headings: the landing-page wordmark. Import this only on pages
-// that set Devanagari as text (the logo is an image and needs no font); it is
-// preloaded there because the wordmark is the first thing on screen.
+// Devanagari display face. The landing wordmark is an outline of it
+// (scripts/build-wordmark.mjs), so no public page downloads it; only the
+// dev-only style guide sets it as text. Not preloaded: this module is imported
+// by the root layout, and a preload here would reach every page.
 export const tiro = Tiro_Devanagari_Hindi({
   weight: "400",
   subsets: ["devanagari"],
   variable: "--font-tiro",
   display: "swap",
+  preload: false,
 });

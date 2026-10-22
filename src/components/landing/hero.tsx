@@ -1,56 +1,72 @@
-import { getImageProps } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
-import { preload } from "react-dom";
 import { restaurant } from "@/data/restaurant";
 import { features } from "@/features";
-import boxOfficeFrontPhoto from "@/assets/venue/box-office-front.webp";
 import boxOfficePhoto from "@/assets/venue/box-office.webp";
-
-// Wide screens get the wide, straight-on Box Office shot so the whole room
-// shows; phones get the upright one. The breakpoint matches landing.css.
-const WIDE = "(min-width: 48rem)";
+import { WORDMARK } from "./wordmark-path";
 
 /**
  * One static, full-bleed photo of an empty room under a flat dark scrim, with
- * the Devanagari wordmark, the address and one action, "View Menu". The only
- * motion is a slight parallax on the photo (landing.css).
+ * the Devanagari wordmark, the name in Latin letters, and the three things a
+ * visitor came for: the menu, a call, directions. The only motion is a slight
+ * parallax on the photo (landing.css).
+ *
+ * The photo is the upright Box Office shot at every width, cropped below its
+ * neon sign (landing.css), so the first word a visitor reads is the name; the
+ * straight-on Box Office shot appears once, under "The rooms".
  */
 export function Hero() {
-  const common = { alt: "The Box Office dining room: arched brass screens, a neon sign and green leather chairs", fill: true, sizes: "100vw" };
-  const { props: wide } = getImageProps({ ...common, src: boxOfficeFrontPhoto });
-  const { props: tall } = getImageProps({ ...common, src: boxOfficePhoto, fetchPriority: "high", loading: "eager" });
-  // Preload only the photo this screen will show.
-  preload(wide.src, { as: "image", imageSrcSet: wide.srcSet, imageSizes: "100vw", media: WIDE, fetchPriority: "high" });
-  preload(tall.src, { as: "image", imageSrcSet: tall.srcSet, imageSizes: "100vw", media: "(max-width: 47.99rem)", fetchPriority: "high" });
-
   return (
-    <section className="lp-hero" aria-labelledby="hero-title">
+    <section id="hero" className="lp-hero" aria-labelledby="hero-title">
       <div className="lp-hero-media">
-        <picture>
-          <source media={WIDE} srcSet={wide.srcSet} sizes="100vw" />
-          <img {...tall} alt={common.alt} className="lp-hero-img" />
-        </picture>
+        <Image
+          src={boxOfficePhoto}
+          alt="The Box Office dining room: brass arched screens, leather booths and green chairs"
+          fill
+          sizes="100vw"
+          quality={60}
+          preload
+          fetchPriority="high"
+          className="lp-hero-img"
+        />
       </div>
       <div className="lp-hero-scrim" aria-hidden="true" />
 
       <div className="lp-hero-content">
         <h1 id="hero-title">
-          <span lang="hi" className="lp-wordmark">
-            {restaurant.wordmark.devanagari}
+          {/* Outlined from Tiro Devanagari Hindi (scripts/build-wordmark.mjs). The name is
+              given as a label, not hidden text, so no Devanagari font is downloaded. */}
+          <svg
+            role="img"
+            aria-label={restaurant.wordmark.devanagari}
+            lang="hi"
+            viewBox={WORDMARK.viewBox}
+            className="lp-wordmark"
+            style={{ height: `${WORDMARK.heightEm}em`, aspectRatio: WORDMARK.viewBox.split(" ").slice(2).join(" / ") }}
+          >
+            <path d={WORDMARK.d} fill="currentColor" />
+          </svg>
+          <span className="mt-3 block font-display text-title font-medium">
+            {restaurant.shortName} Restaurant and Banquet
           </span>
-          <span className="sr-only">{restaurant.shortName}, </span>
-          <span className="mt-2 block font-display text-title font-medium">Restaurant and Banquet</span>
         </h1>
         <p className="mt-3 text-eyebrow font-semibold uppercase">
           {restaurant.branch}, {restaurant.address.city}
         </p>
-        {features.menu && (
-          <Link href="/menu" className="lp-btn mt-8">
-            View Menu
-          </Link>
-        )}
+        <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3">
+          {features.menu && (
+            <Link href="/menu" className="lp-btn lp-btn-on-dark">
+              View Menu
+            </Link>
+          )}
+          <a href={`tel:${restaurant.phone.tel}`} className="lp-link lp-link-on-dark lp-link-pad">
+            Call<span className="sr-only"> {restaurant.phone.display}</span>
+          </a>
+          <a href={restaurant.directionsUrl} target="_blank" rel="noopener noreferrer" className="lp-link lp-link-on-dark">
+            Directions<span className="sr-only"> (opens Google Maps)</span>
+          </a>
+        </div>
       </div>
-
     </section>
   );
 }

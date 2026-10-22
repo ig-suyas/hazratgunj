@@ -133,10 +133,16 @@ export const restaurant = {
     serviceCharge: missing("Any service charge? The menu mentions only taxes."),
   },
 
-  // Google listing, for reference only (not displayed — no ratings on the site).
+  // Google listing, for reference only (not displayed).
   listing: {
     pricePerPerson: "₹600–1,800 (Google, reported by 146 guests)",
   },
+
+  // Shown in the landing page's reviews section. VERIFY: rating and count as
+  // given by the owner on 2026-10-22, not checked against the live listing.
+  googleRating: { value: 4.5, countLabel: "4.5K+", verify: true },
+  // VERIFY: the share link the owner gave for the Google listing (same place as mapsUrl).
+  googleReviewsUrl: "https://share.google/efaIBazIHsOvw0YZ2",
 } as const;
 
 export type Restaurant = typeof restaurant;

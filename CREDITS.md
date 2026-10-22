@@ -108,6 +108,7 @@ Used under the [Unsplash License](https://unsplash.com/license): free for commer
 - **Cormorant Garamond** by Christian Thalmann (Catharsis Fonts): headings. Served by `next/font/google`, and outlined at build time for the share image.
 - **Mukta** by Ek Type: body text and the menu. Served by `next/font/google`.
 - **Tiro Devanagari Hindi** by Tiro Typeworks: Devanagari headings. Served by `next/font/google`, and outlined at build time for the favicon.
+- **Geist** by Vercel: text in the PDF reports and QR sheets (it has the ₹ sign). `public/fonts/geist-regular.ttf`, copied from the Next.js package.
 
 ## Libraries
 - **Next.js** and **React** (MIT).
@@ -115,3 +116,6 @@ Used under the [Unsplash License](https://unsplash.com/license): free for commer
 - **GSAP** with ScrollTrigger (GSAP Standard License, no charge): the entrance animation only.
 - **Lenis** (MIT): smooth scrolling on the landing page only.
 - **sharp** (Apache 2.0) and **fontkit** (MIT): build-time image and font processing, not shipped to the browser.
+- **ECharts** (Apache 2.0): charts on the owner's Reports page, loaded only there.
+- **jsPDF** (MIT) and **jspdf-autotable** (MIT): PDF reports and QR sheets, loaded only when a PDF is requested.
+- **qrcode** (MIT): table QR codes on the owner's Tables page.

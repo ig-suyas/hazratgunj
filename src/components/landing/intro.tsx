@@ -1,25 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
-import { restaurant } from "@/data/restaurant";
 import { features } from "@/features";
+import { openingHoursRows } from "@/lib/format";
 import hallPhoto from "@/assets/venue/rattan-hall.webp";
 
 /**
- * Editorial introduction: a short statement and paragraph beside one photo.
- * Every fact comes from src/data/restaurant.ts or the client's photos.
+ * Editorial introduction: what there is to eat, where, and when, beside one
+ * photo. Every fact comes from src/data/restaurant.ts or the printed menu
+ * (src/data/menu.json); the location is said once, by the hero.
  */
 export function Intro() {
-  const facts = ["Restaurant and banquet", restaurant.cuisines.join(" · "), `${restaurant.branch}, ${restaurant.address.city}`];
+  const hours = openingHoursRows()[0];
+  const facts = [`Open ${hours.days.toLowerCase()}, ${hours.time}`, "Veg and non-veg", "Banquet hall for events"];
   return (
     <section className="bg-cream px-gutter py-16 md:py-24" aria-labelledby="intro-title">
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-12 md:items-center md:gap-8">
         <div className="md:col-span-6" data-reveal>
           <h2 id="intro-title" className="font-display text-headline font-medium text-balance">
-            A restaurant and banquet hall on {restaurant.branch}, {restaurant.address.city}.
+            North Indian, Chinese and Continental, under one roof.
           </h2>
+          {/* Rooms named here are the ones shown under "The rooms" (spaces.tsx). */}
           <p className="mt-6 max-w-[65ch] text-base text-muted md:text-lg">
-            {restaurant.shortName} serves North Indian, Chinese and Continental food in four dining rooms, the Garden, the
-            Pavilion, the Balcony and the Box Office, above Kalyan Jewellers. It is run by {restaurant.operator}.
+            From the tandoor, curries and biryani to Indo-Chinese starters, continental plates, desserts and shakes. Eat in
+            the Garden, the Pavilion or the Box Office, above Kalyan Jewellers.
           </p>
 
           <ul className="lp-facts mt-10">

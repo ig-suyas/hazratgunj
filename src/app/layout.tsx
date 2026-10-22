@@ -2,12 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { restaurant } from "@/data/restaurant";
 import { cormorant, mukta } from "@/design/fonts";
 import { token } from "@/design/tokens";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
-// Absolute URLs for share images: the production domain on Vercel, else local.
-const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "http://localhost:3000";
 
 const title = `${restaurant.shortName} — Restaurant and Banquet, ${restaurant.branch}, ${restaurant.address.city}`;
 const description = `${restaurant.name} on ${restaurant.branch}, ${restaurant.address.city}. North Indian, Chinese and Continental. Open every day, 11 am to 11 pm.`;

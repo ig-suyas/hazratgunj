@@ -2,8 +2,9 @@ import { Logo } from "@/components/logo";
 import { restaurant } from "@/data/restaurant";
 
 export function SiteFooter() {
+  // Extra room at the bottom on phones for the quick actions bar.
   return (
-    <footer className="bg-cream px-gutter py-16">
+    <footer className="bg-cream px-gutter pt-16 pb-28 md:pb-16">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 text-center">
         <Logo size={96} />
         <p className="text-base">Scan the QR code at your table to order.</p>

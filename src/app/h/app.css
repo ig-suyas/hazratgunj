@@ -1,0 +1,205 @@
+/* Staff and owner screens only. Colours, radii and motion come from the theme tokens in globals.css. */
+
+body:has(.app-root) {
+  background: var(--color-cream);
+}
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+.app-spin {
+  animation: app-spin 0.8s linear infinite;
+}
+@keyframes app-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+.app-skeleton {
+  background: var(--color-beige);
+  opacity: 0.55;
+  animation: app-pulse 1.4s ease-in-out infinite;
+}
+@keyframes app-pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.app-toast {
+  animation: app-rise var(--dur-ui) var(--ease-out-expo);
+}
+@keyframes app-rise {
+  from {
+    opacity: 0;
+    translate: 0 0.5rem;
+  }
+}
+
+/* A new order on the staff board. */
+.app-new {
+  box-shadow: inset 0 0 0 2px var(--color-mustard);
+}
+.app-pulse {
+  animation: app-badge 1.6s ease-in-out infinite;
+}
+@keyframes app-badge {
+  50% {
+    background-color: var(--color-mustard);
+  }
+}
+
+/* --- Dialog ---------------------------------------------------------------- */
+.app-dialog {
+  margin: auto;
+  width: calc(100% - 2rem);
+  max-width: 30rem;
+  max-height: min(88dvh, 48rem);
+  padding: 0;
+  border: 1px solid var(--color-sand);
+  border-radius: var(--radius-sheet);
+  background: var(--color-paper);
+  color: var(--color-charcoal);
+  box-shadow: var(--shadow-raised);
+  overflow: hidden;
+  flex-direction: column;
+  opacity: 0;
+  translate: 0 0.75rem;
+  transition:
+    opacity var(--dur-ui) ease,
+    translate var(--dur-sheet) var(--ease-sheet),
+    overlay var(--dur-ui) allow-discrete,
+    display var(--dur-ui) allow-discrete;
+}
+.app-dialog-wide {
+  max-width: 44rem;
+}
+.app-dialog[open] {
+  display: flex;
+  opacity: 1;
+  translate: 0 0;
+}
+@starting-style {
+  .app-dialog[open] {
+    opacity: 0;
+    translate: 0 0.75rem;
+  }
+}
+.app-dialog::backdrop {
+  background: var(--color-scrim);
+}
+.app-dialog-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+.app-dialog-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  border-top: 1px solid var(--color-sand);
+  background: var(--color-cream);
+  padding: 0.75rem 1.25rem max(0.75rem, env(safe-area-inset-bottom));
+}
+
+/* Phones: dialogs rise from the bottom like the menu's sheets. */
+@media (max-width: 639px) {
+  .app-dialog {
+    inset: auto 0 0 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 92dvh;
+    border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
+    translate: 0 100%;
+    opacity: 1;
+  }
+  @starting-style {
+    .app-dialog[open] {
+      translate: 0 100%;
+      opacity: 1;
+    }
+  }
+}
+
+/* Masked PIN entry without a password field (no browser save prompt). */
+.app-pin {
+  -webkit-text-security: disc;
+  letter-spacing: 0.3em;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- Date range timeline (src/components/reports/range-timeline.tsx) -------- */
+.tl-chip {
+  transition:
+    background-color var(--dur-ui) ease,
+    border-color var(--dur-ui) ease,
+    color var(--dur-ui) ease;
+}
+.tl-fade {
+  transition:
+    opacity var(--dur-ui) ease,
+    fill var(--dur-ui) ease;
+}
+.tl-move {
+  transition: transform var(--dur-ui) var(--ease-out-expo);
+}
+.tl-live .tl-move,
+.tl-live .tl-fade {
+  transition: none;
+}
+.tl-cal,
+.tl-line {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.tl-cal {
+  cursor: crosshair;
+}
+.tl-line {
+  touch-action: pan-y;
+}
+.tl-handle {
+  cursor: ew-resize;
+  outline: none;
+  touch-action: none;
+}
+.tl-ring {
+  opacity: 0;
+  transition: opacity var(--dur-ui) ease;
+}
+.tl-handle:focus-visible .tl-ring {
+  opacity: 1;
+}
+.tl-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-sand) transparent;
+}
+.tl-tip {
+  transition: opacity var(--dur-ui) ease;
+}
+@starting-style {
+  .tl-tip {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tl-chip,
+  .tl-fade,
+  .tl-move,
+  .tl-ring,
+  .tl-tip {
+    transition: none;
+  }
+}

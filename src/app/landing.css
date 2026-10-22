@@ -96,6 +96,16 @@
 .lp-link-on-dark {
   color: var(--color-paper);
 }
+/* A 44px-wide tap area for very short links ("Call"); the underline stays under the word. */
+.lp-link-pad {
+  padding-inline: 0.75rem;
+  margin-inline: -0.75rem;
+}
+.lp-link-pad::before,
+.lp-link-pad::after {
+  left: 0.75rem;
+  right: 0.75rem;
+}
 
 /* --- Header ----------------------------------------------------------------
    Fixed and slim. Transparent over the hero photo; solid cream with a
@@ -140,23 +150,32 @@
   background: var(--color-charcoal);
   color: var(--color-paper);
 }
-/* Wide screens: the wide photo (960 × 500) at its own shape, so the whole
-   room shows; capped at the screen height. */
+/* Wide screens: a wide band of the room, capped at the screen height. */
 @media (min-width: 48rem) {
   .lp-hero {
     height: min(52.1vw, 100svh);
   }
-  .lp-hero .lp-hero-img {
-    object-position: 50% 50%;
-  }
 }
+/* The photo (upright Box Office shot) is cropped below its neon sign and the
+   ceiling ducts, so the name is the first thing read. Phones: the media box
+   reaches 48% above the hero and the photo sits on its bottom edge, which
+   keeps the sign out of view through the whole parallax. Wide screens: a band
+   across the booths. */
 .lp-hero-media {
   position: absolute;
-  inset: 0;
+  inset: -48% 0 0;
 }
 .lp-hero-img {
   object-fit: cover;
-  object-position: 50% 30%;
+  object-position: 50% 100%;
+}
+@media (min-width: 48rem) {
+  .lp-hero-media {
+    inset: 0;
+  }
+  .lp-hero .lp-hero-img {
+    object-position: 50% 62%;
+  }
 }
 .lp-hero-scrim {
   position: absolute;
@@ -175,12 +194,13 @@
     padding-bottom: 5rem;
   }
 }
+/* The outlined wordmark (hero.tsx): sized like the type it replaces. */
 .lp-wordmark {
   display: block;
-  font-family: var(--font-deva);
   font-size: clamp(3.5rem, 2.2rem + 9vw, 7rem);
-  font-weight: 400;
-  line-height: 1.2;
+  height: 1em;
+  width: auto;
+  max-width: 100%;
 }
 /* Gentle parallax: the photo drifts down a little as the hero scrolls away.
    Runs on the compositor; it never holds or delays the scroll. */
@@ -197,6 +217,85 @@
   to {
     transform: translateY(8%);
   }
+}
+
+/* Laptops and desktops: the photo fills the whole screen, full width. The
+   upright shot is sized to the screen's width and its top 12% (the AC unit
+   and ducts) sits above the hero, so the Box Office neon is the first thing
+   in view. The name is centred and spread wide. No parallax here. */
+@media (min-width: 64rem) {
+  .lp-hero {
+    align-items: center;
+    height: 100svh;
+    min-height: 0;
+  }
+  .lp-hero-media {
+    inset: calc(-100vw * 4 / 3 * 0.12) 0 0;
+    animation: none;
+    transform: none;
+  }
+  .lp-hero .lp-hero-img {
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+  .lp-hero-content {
+    max-width: none;
+    padding: 5rem var(--spacing-gutter) 0;
+    text-align: center;
+  }
+  .lp-hero-content .lp-wordmark {
+    margin-inline: auto;
+    font-size: min(18vw, 30svh);
+  }
+  .lp-hero-content > div {
+    justify-content: center;
+  }
+}
+
+/* --- Quick actions bar (phones, mobile-actions.tsx) ----------------------- */
+.lp-actions {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 30;
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  padding: 0.5rem var(--spacing-gutter) max(0.5rem, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--color-sand);
+  background: var(--color-cream);
+  translate: 0 100%;
+  transition: translate var(--dur-ui) var(--ease-out-expo);
+}
+.lp-actions[data-shown="true"] {
+  translate: 0 0;
+}
+/* Phones only (this rule outranks Tailwind's md:hidden, so it is set here). */
+@media (min-width: 48rem) {
+  .lp-actions {
+    display: none;
+  }
+}
+.lp-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  border: 1px solid var(--color-bottle);
+  border-radius: var(--radius-pill);
+  background: var(--color-paper);
+  color: var(--color-bottle);
+  font-weight: 600;
+}
+.lp-action-primary {
+  background: var(--color-bottle);
+  color: var(--color-paper);
+}
+.lp-action:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px var(--color-cream),
+    0 0 0 4px var(--color-bottle);
 }
 
 /* --- Intro facts: one row, brass hairlines between ------------------------ */
@@ -273,6 +372,209 @@
   }
   .lp-spaces > li:not(:first-child) .lp-space-media {
     aspect-ratio: 3 / 2;
+  }
+}
+
+/* --- Reviews (reviews.tsx) --------------------------------------------------
+   Five cards in front; behind them a faded wall of review cards drifting
+   sideways (pure CSS: a duplicated track moved by translateX, alternate rows
+   in opposite directions). The wall drifts only while the section is on
+   screen (reviews-motion.tsx sets data-playing) and never for reduced motion.
+   Phones and tablets: the cards are a swipeable row. 1024px+: a staggered cluster. */
+.lp-reviews {
+  overflow-x: clip;
+}
+/* Mukta first; Devanagari falls back to the system's Devanagari font. */
+.lp-review-text {
+  font-family: var(--font-sans), "Noto Sans Devanagari", "Nirmala UI", Mangal, sans-serif;
+  line-height: 1.6;
+}
+.lp-star-empty {
+  fill: var(--color-sand);
+}
+.lp-star-full {
+  fill: var(--color-brass);
+}
+.lp-reviews-stage {
+  position: relative;
+  padding-block: 2rem;
+}
+
+.lp-wall {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+  opacity: 0.45;
+  pointer-events: none;
+  user-select: none;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+.lp-wall-row:nth-child(3) {
+  display: none;
+}
+.lp-wall-track {
+  display: flex;
+  align-items: flex-start;
+  width: max-content;
+  will-change: transform;
+  animation: lp-drift 95s linear infinite;
+  animation-play-state: paused;
+}
+.lp-wall-row:nth-child(2) .lp-wall-track {
+  animation-direction: reverse;
+  animation-duration: 125s;
+}
+.lp-wall-row:nth-child(3) .lp-wall-track {
+  animation-duration: 110s;
+}
+.lp-reviews[data-playing] .lp-wall-track {
+  animation-play-state: running;
+}
+/* The track holds the cards twice; moving it by half loops seamlessly
+   (each card carries its own right margin, so both halves are equal). */
+@keyframes lp-drift {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.lp-wall-card {
+  flex: none;
+  width: 13.5rem;
+  margin-right: 1rem;
+  padding: 0.75rem 0.875rem;
+  border: 1px solid var(--color-sand);
+  border-radius: var(--radius-thumb);
+  background: var(--color-paper);
+}
+.lp-wall-card:nth-child(even) {
+  background: var(--color-beige);
+}
+
+.lp-cluster {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem var(--spacing-gutter) 0.75rem;
+  scroll-padding-inline: var(--spacing-gutter);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.lp-cluster::-webkit-scrollbar {
+  display: none;
+}
+.lp-card {
+  flex: 0 0 min(17.5rem, 100% - 2.5rem);
+  scroll-snap-align: start;
+  padding: 1rem 1.125rem;
+  border: 1px solid var(--color-sand);
+  border-radius: var(--radius-card);
+  background: var(--color-paper);
+  box-shadow: var(--shadow-card);
+  rotate: var(--tilt, 0deg);
+}
+.lp-card:nth-child(1) {
+  --tilt: -1deg;
+}
+.lp-card:nth-child(2) {
+  --tilt: 0.75deg;
+}
+.lp-card:nth-child(3) {
+  --tilt: -0.5deg;
+}
+.lp-card:nth-child(4) {
+  --tilt: 1deg;
+}
+.lp-card:nth-child(5) {
+  --tilt: -0.75deg;
+}
+.lp-card-more {
+  font-weight: 600;
+  color: var(--color-bottle);
+  text-decoration: underline;
+  text-decoration-color: var(--color-brass);
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+
+@media (min-width: 48rem) {
+  .lp-reviews-stage {
+    padding-block: 2.5rem;
+  }
+  .lp-wall {
+    opacity: 0.4;
+    filter: blur(2px);
+  }
+  .lp-wall-row:nth-child(3) {
+    display: block;
+  }
+  .lp-wall-card {
+    width: 15rem;
+  }
+  .lp-card {
+    flex-basis: 20rem;
+    padding: 1.25rem;
+  }
+}
+/* Desktop: three across, then two set between them. Overlaps reach only the
+   cards' bottom padding, never their text. */
+@media (min-width: 64rem) {
+  .lp-cluster {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    column-gap: 1.25rem;
+    align-items: start;
+    justify-items: center;
+    max-width: 72rem;
+    margin-inline: auto;
+    overflow: visible;
+  }
+  .lp-card {
+    width: min(100%, 21.25rem);
+  }
+  .lp-card:nth-child(1) {
+    grid-column: 1 / span 2;
+    --tilt: -1.5deg;
+  }
+  .lp-card:nth-child(2) {
+    grid-column: 3 / span 2;
+    margin-top: 1.25rem;
+    --tilt: 1deg;
+  }
+  .lp-card:nth-child(3) {
+    grid-column: 5 / span 2;
+    margin-top: 0.25rem;
+    --tilt: -0.75deg;
+  }
+  .lp-card:nth-child(4) {
+    grid-column: 2 / span 2;
+    margin-top: -0.75rem;
+    z-index: 1;
+    --tilt: 1.25deg;
+  }
+  .lp-card:nth-child(5) {
+    grid-column: 4 / span 2;
+    margin-top: -0.75rem;
+    z-index: 1;
+    --tilt: -1deg;
+  }
+}
+/* No movement: the five cards and one still, faded row. */
+@media (prefers-reduced-motion: reduce) {
+  .lp-wall-track {
+    animation: none;
+  }
+  .lp-wall {
+    justify-content: center;
+  }
+  .lp-wall-row:not(:first-child) {
+    display: none;
   }
 }
 

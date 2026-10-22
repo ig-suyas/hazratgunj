@@ -46,3 +46,7 @@ next-env.d.ts
 # local-only files
 *.local
 *.log
+
+# local handoff notes, never committed
+CONTEXT.md
+!.env.example

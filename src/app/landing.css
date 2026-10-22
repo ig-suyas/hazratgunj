@@ -315,31 +315,51 @@
 }
 
 /* --- Intro facts: one row, brass hairlines between ------------------------ */
+/* Key facts: small brass label over a plain value, under one brass hairline.
+   Phones: label left, value right, one row each. From 640px: three columns. */
 .lp-facts {
   display: grid;
-  border-block: 1px solid var(--color-sand);
-}
-.lp-facts > li {
-  padding-block: 0.75rem;
-  font-size: var(--text-sm);
-  font-weight: 600;
-}
-.lp-facts > li + li {
   border-top: 1px solid var(--color-brass);
+}
+.lp-facts > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.875rem;
+}
+.lp-facts > div + div {
+  border-top: 1px solid var(--color-sand);
+}
+.lp-facts dt {
+  color: var(--color-brass-ink);
+  font-size: var(--text-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--text-eyebrow--letter-spacing);
+  line-height: var(--text-eyebrow--line-height);
+  text-transform: uppercase;
+}
+.lp-facts dd {
+  color: var(--color-charcoal);
+  font-size: var(--text-item);
+  font-weight: 600;
+  line-height: var(--text-item--line-height);
+  white-space: nowrap;
 }
 @media (min-width: 40rem) {
   .lp-facts {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    column-gap: 3rem;
+    padding-top: 1.25rem;
   }
-  .lp-facts > li {
-    padding: 1rem;
+  .lp-facts > div {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-block: 0;
   }
-  .lp-facts > li:first-child {
-    padding-left: 0;
-  }
-  .lp-facts > li + li {
+  .lp-facts > div + div {
     border-top: 0;
-    border-left: 1px solid var(--color-brass);
   }
 }
 

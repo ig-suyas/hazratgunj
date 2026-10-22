@@ -11,7 +11,11 @@ import hallPhoto from "@/assets/venue/rattan-hall.webp";
  */
 export function Intro() {
   const hours = openingHoursRows()[0];
-  const facts = [`Open ${hours.days.toLowerCase()}, ${hours.time}`, "Veg and non-veg", "Banquet hall for events"];
+  const facts = [
+    { label: `Open ${hours.days.toLowerCase()}`, value: hours.time },
+    { label: "Kitchen", value: "Veg and non-veg" },
+    { label: "Events", value: "Banquet hall" },
+  ];
   return (
     <section className="bg-cream px-gutter py-16 md:py-24" aria-labelledby="intro-title">
       <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-12 md:items-center md:gap-8">
@@ -25,11 +29,14 @@ export function Intro() {
             the Garden, the Pavilion or the Box Office, above Kalyan Jewellers.
           </p>
 
-          <ul className="lp-facts mt-10">
+          <dl className="lp-facts mt-10">
             {facts.map((fact) => (
-              <li key={fact}>{fact}</li>
+              <div key={fact.label}>
+                <dt>{fact.label}</dt>
+                <dd className="tabular">{fact.value}</dd>
+              </div>
             ))}
-          </ul>
+          </dl>
 
           {features.menu && (
             <Link href="/menu" className="lp-link mt-10">

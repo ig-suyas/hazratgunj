@@ -9,11 +9,12 @@ import { WORDMARK } from "./wordmark-path";
  * One static, full-bleed photo of an empty room under a flat dark scrim, with
  * the Devanagari wordmark, the name in Latin letters, and the three things a
  * visitor came for: the menu, a call, directions. The only motion is a slight
- * parallax on the photo (landing.css).
+ * parallax on the photo on tablets (landing.css).
  *
- * The photo is the upright Box Office shot at every width, cropped below its
- * neon sign (landing.css), so the first word a visitor reads is the name; the
- * straight-on Box Office shot appears once, under "The rooms".
+ * The photo is the upright Box Office shot at every width. Phones and laptops
+ * crop only its top (AC unit and ducts) so the neon shows; tablets show a band
+ * across the booths (landing.css). The straight-on Box Office shot appears
+ * once, under "The rooms".
  */
 export function Hero() {
   return (

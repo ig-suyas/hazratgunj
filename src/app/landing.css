@@ -156,11 +156,8 @@
     height: min(52.1vw, 100svh);
   }
 }
-/* The photo (upright Box Office shot) is cropped below its neon sign and the
-   ceiling ducts, so the name is the first thing read. Phones: the media box
-   reaches 48% above the hero and the photo sits on its bottom edge, which
-   keeps the sign out of view through the whole parallax. Wide screens: a band
-   across the booths. */
+/* The photo (upright Box Office shot). Tablets: a band across the booths.
+   Phones and laptops: see their own blocks below. */
 .lp-hero-media {
   position: absolute;
   inset: -48% 0 0;
@@ -216,6 +213,25 @@
 @keyframes lp-parallax {
   to {
     transform: translateY(8%);
+  }
+}
+
+/* Phones: the whole photo, full width, minus its top 10% (the AC unit and
+   ducts), so the Box Office neon is in view. The hero takes the photo's own
+   shape, so nothing is cut at the sides. No parallax (it would bring the AC
+   back into view). */
+@media (max-width: 47.999rem) {
+  .lp-hero {
+    height: calc(100vw * 4 / 3 * 0.9);
+    min-height: 0;
+  }
+  .lp-hero-media {
+    inset: calc(-100vw * 4 / 3 * 0.1) 0 0;
+    animation: none;
+    transform: none;
+  }
+  .lp-hero .lp-hero-img {
+    object-position: 50% 0;
   }
 }
 

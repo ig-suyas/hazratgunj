@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { useLive } from "@/components/app/hooks";
 import { Button, DemoDataLabel, ErrorState, Loading, PageHeader, Segmented, Switch, toast } from "@/components/app/ui";
 import { getSalesReport, getTimeline, type SalesReport, type Timeline } from "@/lib/api";
-import { change, count, dayLabel, daysBetween, monthLabel, money, percent, rangeLabel, WEEKDAYS_LONG } from "@/lib/fmt";
+import { change, count, dayLabel, daysBetween, monthLabel, money, moneyShort, percent, rangeLabel, WEEKDAYS_LONG } from "@/lib/fmt";
 import { ChartCard, DataTable, EChart } from "./chart";
 import {
   HOURS,
@@ -17,11 +17,14 @@ import {
   palette,
   pickDishes,
   sessionOption,
+  sliceColour,
   tableSalesOption,
   trendOption,
   weekdayOption,
   type Grain,
+  type Palette,
 } from "./chart-options";
+import type { ChartOption } from "./echarts";
 import { RangeTimeline, monthsBetween, presetRange, type Range } from "./range-timeline";
 
 export default function ReportsPage() {
@@ -56,7 +59,7 @@ function Reports({ timeline }: { timeline: Timeline }) {
     () =>
       r && {
         trend: trendOption(p, r, effectiveGrain, compare),
-        category: categoryOption(p, r),
+        category: categoryOption(p, r, false, false),
         heat: heatOption(p, r),
         weekday: weekdayOption(p, r),
         tableSales: tableSalesOption(p, r),
@@ -195,8 +198,7 @@ function Reports({ timeline }: { timeline: Timeline }) {
               subtitle="Share of sales"
               table={<DataTable head={["Category", "Sales", "Share"]} numeric={[1, 2]} rows={r.categories.map((c) => [c.name, money(c.revenue), percent((c.revenue / (r.kpis.sales || 1)) * 100)])} />}
             >
-              <EChart option={opts.category} height={300} label="Category share donut chart" />
-              <p className="text-sm text-muted">Top five categories; the rest are grouped as Other ({categorySlices(r).length > 5 ? r.categories.length - 5 : 0} categories).</p>
+              <CategorySplit p={p} r={r} option={opts.category} />
             </ChartCard>
           </div>
 
@@ -328,6 +330,39 @@ function Kpi({
 }
 
 const OUTCOME_COLORS = ["#257a55", "#2e6fbf", "#cf6a2c", "#a8509a", "#a87c0c"];
+
+/** Donut plus an HTML legend: stacked on phones, side by side from `sm`, so long category names wrap instead of running over the chart. */
+function CategorySplit({ p, r, option }: { p: Palette; r: SalesReport; option: ChartOption }) {
+  const slices = categorySlices(r);
+  const total = slices.reduce((s, x) => s + x.value, 0);
+  const others = r.categories.length - 5;
+  return (
+    <div className="grid items-center gap-x-6 gap-y-4 sm:grid-cols-[13rem_minmax(0,1fr)]">
+      <div className="relative mx-auto w-full max-w-[13rem]">
+        <EChart option={option} height={208} label="Category share donut chart" />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center">
+          <span className="text-xs text-muted">Sales</span>
+          <span className="text-lg font-semibold tabular">{moneyShort(total)}</span>
+        </div>
+      </div>
+      <div className="min-w-0">
+        <ul className="space-y-2.5">
+          {slices.map((s, i) => (
+            <li key={s.name} className="flex items-start gap-3">
+              <span aria-hidden="true" className="mt-1.5 size-3 shrink-0 rounded-xs" style={{ background: sliceColour(p, s.name, i) }} />
+              <span className="min-w-0 flex-1 leading-snug">
+                {s.name}
+                <span className="block text-sm text-muted tabular">{money(s.value)}</span>
+              </span>
+              <span className="font-semibold tabular">{percent(s.share)}</span>
+            </li>
+          ))}
+        </ul>
+        {others > 0 && <p className="mt-3 text-sm text-muted">Other groups the remaining {others} {others === 1 ? "category" : "categories"}.</p>}
+      </div>
+    </div>
+  );
+}
 
 function Outcomes({ r }: { r: SalesReport }) {
   const o = r.outcomes;

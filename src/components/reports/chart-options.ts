@@ -225,12 +225,16 @@ export function categorySlices(r: SalesReport) {
   return slices.map((s) => ({ ...s, share: (s.value / total) * 100 }));
 }
 
-export function categoryOption(p: Palette, r: SalesReport, big = false): ChartOption {
+export const sliceColour = (p: Palette, name: string, i: number) => (name === "Other" ? p.other : p.series[i]);
+
+/** `legend: false` draws the donut alone (the screen renders its own legend beside it; the PDF keeps the canvas legend). */
+export function categoryOption(p: Palette, r: SalesReport, big = false, legend = true): ChartOption {
   const slices = categorySlices(r);
   return {
     ...base(p, big),
-    tooltip: { ...base(p).tooltip, trigger: "item", formatter: (x: { name: string; value: number; percent: number }) => `<b>${x.name}</b><br/>${money(x.value)} · ${x.percent.toFixed(1)}%` },
+    tooltip: { ...base(p).tooltip, trigger: "item", confine: true, formatter: (x: { name: string; value: number; percent: number }) => `<b>${x.name}</b><br/>${money(x.value)} · ${x.percent.toFixed(1)}%` },
     legend: {
+      show: legend,
       orient: "vertical",
       right: 0,
       top: "middle",
@@ -246,12 +250,12 @@ export function categoryOption(p: Palette, r: SalesReport, big = false): ChartOp
     series: [
       {
         type: "pie",
-        radius: ["52%", "80%"],
-        center: ["32%", "50%"],
+        radius: legend ? ["52%", "80%"] : ["62%", "92%"],
+        center: legend ? ["32%", "50%"] : ["50%", "50%"],
         avoidLabelOverlap: true,
         label: { show: false },
         itemStyle: { borderColor: p.surface, borderWidth: 2 },
-        data: slices.map((s, i) => ({ name: s.name, value: s.value, itemStyle: { color: s.name === "Other" ? p.other : p.series[i] } })),
+        data: slices.map((s, i) => ({ name: s.name, value: s.value, itemStyle: { color: sliceColour(p, s.name, i) } })),
       },
     ],
   };
